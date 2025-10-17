@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+@theme {
+     --font-sans: 'Geist', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  @apply antialiased text-white bg-black;
+}
+
+.main-btn {
+  @apply text-[#FFFFFF] font-[600] text-[15px] px-[24px] py-[15px] rounded-[50px];
+  @apply cursor-pointer transition-colors duration-300 text-center;
+  color: var(--color-white);
+  background: linear-gradient(91.04deg, #FF6B35 -40.2%, #831915 152.61%);
+}
+.main-btn:hover {
+  background: linear-gradient(90deg, #FF6B35 0%, #d95220 50%, #c2481b 100%);
+}
