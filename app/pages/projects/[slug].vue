@@ -12,6 +12,9 @@
       :description="pageData?.featuresSection?.description"
       :points="pageData?.featuresSection?.points"
     />
+    <ProductMediaData
+      :data="pageData?.mediaData"
+    />
     <ProductContact :title="pageData?.contactSection?.title" />
   </template>
   <Page404 v-else />

@@ -1,6 +1,6 @@
 <template>
   <section class="px-6 py-[100px] relative overflow-x-clip md:py-[200px]">
-    <div class="pointer-events-none absolute bottom-0 left-[50%] w-[1580px] translate-x-[-50%] translate-y-[30%]">
+    <div class="pointer-events-none absolute bottom-0 left-[50%] w-[1580px] translate-x-[-50%] translate-y-[20%]">
       <img
         class="w-full"
         src="@/assets/images/shade-curve-1.svg"
@@ -52,33 +52,51 @@ const props = defineProps({
 </script>
 
 <style scoped>
-/* 🟢 First item → top-left */
-.grid-container > :first-child {
-  border-top-left-radius: 8px;
-}
 
-/* 🟢 Second item → top-right */
-.grid-container > :nth-child(2) {
-  border-top-right-radius: 8px;
-}
+  .grid-container > * {
+    border-radius: 0;
+  }
+  /* 🟢 First item → top-left */
+  .grid-container > :first-child {
+    border-top-left-radius: 8px;
+  }
 
-/* 🟢 Odd last item (single in last row) → bottom corners */
-.grid-container > :last-child:nth-child(odd) {
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-}
+  /* 🟢 Second item → top-right */
+  .grid-container > :nth-child(2) {
+    border-top-right-radius: 8px;
+  }
 
-/* 🟢 Even last row (two items) → bottom corners per side */
-.grid-container > :nth-last-child(2):nth-child(odd) {
-  border-bottom-left-radius: 8px;
-}
-.grid-container > :last-child:nth-child(even),
-.grid-container > :nth-last-child(2):nth-child(even) {
-  border-bottom-right-radius: 8px;
-}
+  /* 🟢 Odd last item (single in last row) → bottom corners */
+  .grid-container > :last-child:nth-child(odd) {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
 
-/* 🟢 Special: only one item */
-.grid-container:has(:only-child) > :only-child {
-  border-radius: 8px;
-}
+  /* 🟢 Even last row (two items) → bottom corners per side */
+  .grid-container > :nth-last-child(2):nth-child(odd) {
+    border-bottom-left-radius: 8px;
+  }
+  .grid-container > :last-child:nth-child(even),
+  .grid-container > :nth-last-child(2):nth-child(even) {
+    border-bottom-right-radius: 8px;
+  }
+
+  /* 🟢 Special: only one item */
+  .grid-container:has(:only-child) > :only-child {
+    border-radius: 8px;
+  }
+
+  @media screen and (max-width:767px) {
+    .grid-container > * {
+      border-radius: 0;
+    }
+    .grid-container > :first-child {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+    .grid-container > :last-child {
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+  }
 </style>
