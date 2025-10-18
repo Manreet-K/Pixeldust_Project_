@@ -33,7 +33,7 @@
       <NuxtLink
         v-for="(item, i) in prItems"
         :key="`a_${i}`"
-        class="block p-6 -mb-px -mr-px md:p-8 hover:text-[#FF6B35] max-md:text-center"
+        class="p-btn block p-6 -mb-px -mr-px md:p-8 max-md:text-center"
         :to="item.link"
       >
         <img class="mb-6 size-[64px] max-md:mx-auto" :src="item.image" alt="" loading="lazy" />
@@ -89,6 +89,10 @@ const prItems = [
 </script>
 
 <style scoped>
+.p-btn:hover {
+  color: #FF6B35;
+  background: linear-gradient(180deg, rgba(255, 107, 53, 0) 5.91%, rgba(255, 107, 53, 0.0814045) 73.62%, #FF6B35 496.24%);
+}
 .hero-grad::after {
   content: "";
   position: absolute;

@@ -13,7 +13,7 @@
         {{ item.label }}
       </button>
     </div>
-    <div class="rounded-lg overflow-clip border border-[#4c4c4c] p-6 mx-auto max-w-[1200px] xl:p-[64px]">
+    <div class="rounded-lg overflow-clip border border-[#4c4c4c] p-6 mx-auto max-w-[1200px] xl:p-[64px] md:mb-10">
       <div v-show="selectedTab === tabs[0].key">
         <h5
           v-if="props.data?.videos?.label"
