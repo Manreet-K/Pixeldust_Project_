@@ -22,12 +22,12 @@
         Unlock the potential of your data with our suite of
         innovative AI solutions, driving smarter business outcomes.
       </p>
-      <NuxtLink
-        to="/contact-us"
+      <button
+        @click="openModal"
         class="main-btn max-w-full w-[280px]"
       >
         Request Sandbox Access
-      </NuxtLink>
+    </button>
     </div>
     <div class="relative overflow-clip mt-[64px] mx-auto max-w-[1118px] bg-black/95 rounded-lg divide-y divide-x divide-[#4c4c4c] border border-[#4c4c4c] grid grid-cols-2 md:grid-cols-3 md:mt-[130px]">
       <NuxtLink
@@ -44,6 +44,7 @@
 </template>
 
 <script setup>
+import { useModal } from "~/composables/useScheduleModal.js";
 import IconMeru from '~/assets/images/icons/icon-meru-ai.svg';
 import IconInsightsStudio from '~/assets/images/icons/icon-insights-studio.svg';
 import IconESA from '~/assets/images/icons/icon-search-agent.svg';
@@ -51,6 +52,7 @@ import IconDAA from '~/assets/images/icons/icon-data-graph.svg';
 import IconESRA from '~/assets/images/icons/icon-search-agent.svg';
 import IconMLC from '~/assets/images/icons/icon-chatbot.svg';
 
+const { openModal } = useModal();
 
 const prItems = [
   {

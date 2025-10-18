@@ -6,20 +6,22 @@
         v-html="props.title"
       >
       </h2>
-      <NuxtLink
-        to="/contact-us"
+      <button
+        @click="openModal"
         class="main-btn max-w-full w-[280px]"
       >
         Request Sandbox Access
-      </NuxtLink>
+    </button>
     </div>
   </section>
 </template>
 
 <script setup>
+import { useModal } from "~/composables/useScheduleModal.js";
 const props = defineProps({
   title: String,
 })
+const { openModal } = useModal();
 </script>
 
 <style scoped>

@@ -77,22 +77,25 @@
         <br class="max-md:hidden"/>
         the power of Your data?
       </h2>
-      <NuxtLink
-        to="/contact-us"
+      <button
+        @click="openModal"
         class="main-btn max-w-full w-[280px]"
       >
         Request Sandbox Access
-      </NuxtLink>
+    </button>
     </div>
   </section>
 </template>
 
 <script setup>
+import { useModal } from "~/composables/useScheduleModal.js";
 import IconRapid from '@/assets/images/icons/icon-rapid.svg';
 import IconShield from '@/assets/images/icons/icon-shield.svg';
 import IconSupport from '@/assets/images/icons/icon-expert-support.svg';
 
 import SlideImage from '@/assets/images/home/slide-1-image.png';
+
+const { openModal } = useModal();
 
 const crAdvantages = [
   {

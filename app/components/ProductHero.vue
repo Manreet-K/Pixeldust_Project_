@@ -25,12 +25,12 @@
       <p class="text-lg text-center text-[#8f8f8f] max-w-[670px]">
         {{ props.description }}
       </p>
-      <NuxtLink
-        to="/contact-us"
+      <button
+        @click="openModal"
         class="main-btn max-w-full w-[280px] mt-[10px]"
       >
         Request Sandbox Access
-      </NuxtLink>
+    </button>
     </div>
     <div class="mt-[64px] h-[380px] md:mt-[130px]">
     </div>
@@ -43,13 +43,14 @@
 </template>
 
 <script setup>
+import { useModal } from "~/composables/useScheduleModal.js";
 const props = defineProps({
   label: String,
   title: String,
   description: String,
   leaderHeadline: String,
 })
-
+const { openModal } = useModal();
 </script>
 
 <style scoped>

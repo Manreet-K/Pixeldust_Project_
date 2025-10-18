@@ -54,11 +54,13 @@
           </div>
         </div>
 
-        <NuxtLink
+        <button
           class="m-btn w-[180px]"
-          to="/contact-us"
-          @click="closeMenu"
-        >Request Access</NuxtLink>
+          @click="() => {
+            openModal()
+            closeMenu()
+          }"
+        >Request Access</button>
       </div>
       <button @click="toggleMenu" class="md:hidden">
         <IconCross v-if="menuOpen" class="w-4 text-white" />
@@ -70,6 +72,7 @@
 
 <script setup>
 import { watchThrottled, useWindowSize, useWindowScroll } from '@vueuse/core';
+import { useModal } from "~/composables/useScheduleModal.js";
 import IconChevronDown from './IconChevronDown.vue';
 import IconMenu from './IconMenu.vue';
 import IconCross from './IconCross.vue';
@@ -80,6 +83,7 @@ const isMobile = computed(() => windowWidth.value < 768)
 const openDropdowns = ref([])
 const menuOpen = ref(false)
 const headerSticky = ref(false)
+const { openModal } = useModal()
 const toggleMenu = () => {
   menuOpen.value = !menuOpen.value
 }
