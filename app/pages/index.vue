@@ -23,7 +23,7 @@
       <div class="text-[#ebebeb] bg-[#303030] font-mono text-[12px] px-6 py-2.5 rounded-4xl">
         FEATURED SOLUTIONS
       </div>
-      <h2 class="max-w-[820px] font-medium tracking-tight leading-tight text-[42px] md:text-[56px]">
+      <h2 class="max-w-[820px] font-medium tracking-tight leading-tight text-[36px] md:text-[56px]">
          Innovative AI solutions to drive your business forward
       </h2>
       <p class="text-base text-[#8f8f8f] max-w-[670px]">
@@ -49,7 +49,7 @@
       >
     </div>
     <div class="gap-y-6 flex flex-col items-center mx-auto text-center relative">
-      <h2 class="font-medium tracking-tight leading-tight text-[42px] md:text-[56px]">
+      <h2 class="font-medium tracking-tight leading-tight text-[36px] md:text-[56px]">
         The CriticalRiver advantage
       </h2>
       <p class="text-base text-[#8f8f8f] max-w-[670px]">
@@ -72,7 +72,7 @@
 
   <section class="px-6 py-20 md:py-[100px]">
     <div class="gap-y-[50px] flex flex-col items-center mx-auto max-w-[630px]">
-      <h2 class="text-center font-medium tracking-tight leading-tight text-[42px] md:text-[56px]">
+      <h2 class="text-center font-medium tracking-tight leading-tight text-[36px] md:text-[56px]">
         Ready to unlock
         <br class="max-md:hidden"/>
         the power of Your data?

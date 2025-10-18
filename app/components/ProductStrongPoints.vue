@@ -13,7 +13,7 @@
         {{ props.label }}
       </div>
       <h2
-        class="max-w-[620px] font-medium tracking-tight leading-tight text-[42px] md:text-[56px]"
+        class="max-w-[620px] font-medium tracking-tight leading-tight text-[36px] md:text-[56px]"
         :style="{
           maxWidth: props.headingWidth ? `${props.headingWidth}px` : ''
         }"

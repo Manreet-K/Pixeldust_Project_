@@ -19,7 +19,7 @@
         v-if="props.label"
         class="text-[#FF7C53] font-medium leading-tight text-[16px] md:text-[26px]"
       >{{ props.label }}</div>
-      <h1 class="text-center font-medium tracking-tight leading-tight text-[48px] md:text-[80px]">
+      <h1 class="text-center font-medium tracking-tight leading-tight text-[42px] md:text-[80px]">
         {{ props.title }}
       </h1>
       <p class="text-lg text-center text-[#8f8f8f] max-w-[670px]">

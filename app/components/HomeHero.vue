@@ -15,7 +15,7 @@
       >
     </div>
     <div class="relative gap-y-[38px] flex flex-col items-center mx-auto max-w-[900px]">
-      <h1 class="text-center font-medium tracking-tight leading-tight text-[48px] md:text-[80px]">
+      <h1 class="text-center font-medium tracking-tight leading-tight text-[42px] md:text-[80px]">
         Ride the agentic wave with CriticalRiver
       </h1>
       <p class="text-lg text-center text-[#8f8f8f] max-w-[550px]">
