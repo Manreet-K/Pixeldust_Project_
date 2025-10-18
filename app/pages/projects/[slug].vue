@@ -5,6 +5,8 @@
       :title="pageData?.heroSection?.title"
       :description="pageData?.heroSection?.description"
       :leaderHeadline="pageData?.heroSection?.leaderHeadline"
+      :headingMaxWidth="pageData?.heroSection?.headingMaxWidth"
+      :leaderMaxWidth="pageData?.heroSection?.leaderMaxWidth"
     />
     <ProductStrongPoints
       :label="pageData?.featuresSection?.label"
@@ -22,6 +24,7 @@
 
 <script setup>
 import meeruData from '~/utils/meeru-ai.js'
+import insightsStudioData from '~/utils/insights-studio.js';
 const route = useRoute()
 const slug = route.params.slug
 
@@ -30,6 +33,12 @@ const pageData = ref(null)
 const initPage = () => {
   if(slug === 'meeru-ai') {
     pageData.value = meeruData
+  }
+  else if(slug === 'insights-studio') {
+    pageData.value = insightsStudioData
+  }
+  else {
+    pageData.value = null
   }
 }
 initPage()

@@ -14,7 +14,12 @@
         loading="lazy"
       >
     </div>
-    <div class="relative gap-y-[32px] flex flex-col items-center mx-auto max-w-[865px]">
+    <div
+      class="relative gap-y-[32px] flex flex-col items-center mx-auto max-w-[865px]"
+      :style="{
+        maxWidth: props.headingMaxWidth ? `${props.headingMaxWidth}px`: ''
+      }"
+    >
       <div
         v-if="props.label"
         class="text-[#FF7C53] font-medium leading-tight text-[16px] md:text-[26px]"
@@ -36,7 +41,12 @@
     </div>
   </section>
   <div class="px-6 text-center pt-10 pb-[100px]">
-    <p class="mx-auto max-w-[890px] leading-snug font-medium text-[24px] md:text-[36px]">
+    <p
+      class="mx-auto max-w-[890px] leading-snug font-medium text-[24px] md:text-[36px]"
+      :style="{
+        maxWidth: props.leaderMaxWidth ? `${props.leaderMaxWidth}px`: ''
+      }"
+    >
       {{ props.leaderHeadline }}
     </p>
   </div>
@@ -49,6 +59,8 @@ const props = defineProps({
   title: String,
   description: String,
   leaderHeadline: String,
+  headingMaxWidth: Number,
+  leaderMaxWidth: Number
 })
 const { openModal } = useModal();
 </script>

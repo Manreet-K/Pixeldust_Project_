@@ -1,6 +1,6 @@
 <template>
   <section class="px-6 py-20 md:py-[100px]">
-    <div class="gap-y-[50px] flex flex-col items-center mx-auto max-w-[630px]">
+    <div class="gap-y-[50px] flex flex-col items-center mx-auto max-w-[730px]">
       <h2
         class="text-center font-medium tracking-tight leading-tight text-[36px] md:text-[56px]"
         v-html="props.title"
