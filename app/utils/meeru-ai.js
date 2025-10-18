@@ -2,6 +2,9 @@ import IconGraph from '../assets/images/icons/icon-graph-2.svg';
 import IconDrumTick from '../assets/images/icons/icon-drum-tick.svg';
 import IconCubes from '../assets/images/icons/icon-cubes.svg';
 import IconDrums from '../assets/images/icons/icon-drums.svg';
+import IconBox from '../assets/images/icons/icon-box.svg';
+import IconBubble from '../assets/images/icons/icon-bubble.svg';
+import IconTriangle from '../assets/images/icons/icon-triangle.svg';
 
 export default {
   heroSection: {
@@ -61,8 +64,24 @@ export default {
       ]
     },
     docs: {
-      label: 'See Meeru.ai in Action',
-      list: []
+      label: 'See Meeru.ai Documentation',
+      list: [
+        {
+          title: 'Automating Month-End Close with Agents',
+          videoUrl: '/sample-pdf.pdf',
+          image: IconBubble,
+        },
+        {
+          title: 'Automating Analytics Pipelines with No Code',
+          videoUrl: '/sample-pdf.pdf',
+          image: IconTriangle,
+        },
+        {
+          title: 'From Data Chaos to Enterprise Intelligence',
+          videoUrl: '/sample-pdf.pdf',
+          image: IconBox,
+        },
+      ]
     },
     tutorials: {
       label: 'See Meeru.ai Tutorials',

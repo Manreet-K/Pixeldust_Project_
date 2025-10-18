@@ -48,21 +48,14 @@
         >
           {{ props.data?.docs?.label }}
         </h5>
-        <div class="min-h-[50vh] gap-8 grid grid-cols-1 md:grid-cols-2 xl:gap-[64px]">
+        <div class="min-h-[50vh] gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:gap-[64px]">
           <div
             v-for="(item, i) in props.data?.docs?.list || []"
             :key="`v_${i}`"
+            @click="downloadPDF(item.url, item.title)"
           >
-            <div class="video-container bg-gray-900 rounded-lg mb-5">
-              <iframe
-                width="560"
-                height="315"
-                :src="getEmbedUrl(item.videoUrl)"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
+            <div class="doc-container bg-gray-900 border border-[#4c4c4c] rounded-lg mb-5">
+              <img :src="item.image" alt="" loading="lazy" />
             </div>
             <p class="text-base font-medium md:text-lg">{{ item.title }}</p>
           </div>
@@ -132,6 +125,16 @@ const getEmbedUrl = (videoUrl) => {
   }
   return videoUrl.replace("watch?v=", "embed/");
 }
+const downloadPDF = (url, name) => {
+  const link = document.createElement("a")
+  link.href = url
+  // link.download = url.split("/").pop() || "grupo-brocal-product-catalogue.pdf" /* set filename */
+  link.download = `${name}.pdf` // default filename
+  link.target = "_blank" // ensures it works across browsers
+  document.body.appendChild(link)
+  link.click()
+  document.body.removeChild(link)
+}
 </script>
 
 <style scoped>
@@ -156,6 +159,17 @@ const getEmbedUrl = (videoUrl) => {
   left: 0;
   right: 0;
   bottom: 0;
+}
+.doc-container {
+  width: 200px;
+  height: 250px;
+  @apply flex items-center justify-center cursor-pointer transition-transform duration-200 scale-100;
+}
+.doc-container > img {
+  @apply object-contain;
+}
+.doc-container:hover {
+  @apply scale-95;
 }
 .video-container {
   position: relative;
