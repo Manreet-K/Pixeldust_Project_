@@ -29,7 +29,7 @@
         Request Sandbox Access
     </button>
     </div>
-    <div class="relative overflow-clip mt-[64px] mx-auto max-w-[1118px] bg-black/95 rounded-lg divide-y divide-x divide-[#4c4c4c] border border-[#4c4c4c] grid grid-cols-2 md:grid-cols-3 md:mt-[130px]">
+    <div class="relative overflow-clip mt-[64px] mx-auto max-w-[1118px] bg-black/60 rounded-lg divide-y divide-x divide-[#4c4c4c] border border-[#4c4c4c] grid grid-cols-2 md:grid-cols-3 md:mt-[130px]">
       <NuxtLink
         v-for="(item, i) in prItems"
         :key="`a_${i}`"
