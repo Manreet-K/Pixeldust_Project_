@@ -1,9 +1,9 @@
 <template>
   <section class="px-6 py-[100px] relative overflow-x-clip md:py-[200px]">
-    <div class="pointer-events-none absolute bottom-0 left-[50%] w-[1580px] translate-x-[-50%] translate-y-[20%]">
+    <div class="pointer-events-none absolute top-[50%] left-[50%] w-[1580px] translate-x-[-50%] translate-y-[-35%]">
       <img
         class="w-full"
-        src="@/assets/images/shade-curve-1.svg"
+        src="@/assets/images/product-sp-bg.svg"
         alt=""
         loading="lazy"
       >
@@ -28,7 +28,7 @@
       <div
         v-for="(item, i) in points"
         :key="`a_${i}`"
-        class="-mb-px -mr-px py-8 px-6 bg-black/80 border border-[#4c4c4c] md:px-8 md:py-[45px]"
+        class="-mb-px -mr-px py-8 px-6 bg-black/60 border border-[#4c4c4c] md:px-8 md:py-[45px]"
       >
         <img class="mb-6 size-[64px]" :src="item.image" alt="" loading="lazy" />
         <h4 class="mb-4 font-medium leading-snug text-[22px]">{{ item.title }}</h4>

@@ -68,17 +68,17 @@ export default {
       list: [
         {
           title: 'Automating Month-End Close with Agents',
-          videoUrl: '/sample-pdf.pdf',
+          url: '/sample-pdf.pdf',
           image: IconBubble,
         },
         {
           title: 'Automating Analytics Pipelines with No Code',
-          videoUrl: '/sample-pdf.pdf',
+          url: '/sample-pdf.pdf',
           image: IconTriangle,
         },
         {
           title: 'From Data Chaos to Enterprise Intelligence',
-          videoUrl: '/sample-pdf.pdf',
+          url: '/sample-pdf.pdf',
           image: IconBox,
         },
       ]

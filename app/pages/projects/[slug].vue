@@ -17,7 +17,10 @@
     <ProductMediaData
       :data="pageData?.mediaData"
     />
-    <ProductContact :title="pageData?.contactSection?.title" />
+    <ProductContact
+      :title="pageData?.contactSection?.title"
+      :headingWidth="pageData?.contactSection?.headingMaxWidth"
+    />
   </template>
   <Page404 v-else />
 </template>
@@ -25,6 +28,11 @@
 <script setup>
 import meeruData from '~/utils/meeru-ai.js'
 import insightsStudioData from '~/utils/insights-studio.js';
+import EsaData from '~/utils/enterprise-strategy-agent.js';
+import DsaData from '~/utils/data-analyst-agent.js';
+import EpSrData from '~/utils/enterprise-search-agent.js';
+import multilingualChatbotData from '~/utils/multilingual-chatbot.js';
+
 const route = useRoute()
 const slug = route.params.slug
 
@@ -36,6 +44,18 @@ const initPage = () => {
   }
   else if(slug === 'insights-studio') {
     pageData.value = insightsStudioData
+  }
+  else if(slug === 'enterprise-strategy-agent') {
+    pageData.value = EsaData
+  }
+  else if(slug === 'enterprise-search-agent') {
+    pageData.value = EpSrData
+  }
+  else if(slug === 'data-analyst-agent') {
+    pageData.value = DsaData
+  }
+  else if(slug === 'multilingual-chatbot') {
+    pageData.value = multilingualChatbotData
   }
   else {
     pageData.value = null

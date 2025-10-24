@@ -1,6 +1,14 @@
 <template>
-  <section class="px-6 py-[100px] md:py-[120px]">
-    <div class="mb-6 flex items-stretch rounded-lg overflow-clip divide-x divide-[#4c4c4c] border border-[#4c4c4c] overflow-x-auto mx-auto max-w-[1200px]">
+  <section class="px-6 py-[100px] relative overflow-x-clip md:py-[120px]">
+    <div class="pointer-events-none absolute top-[50%] left-[50%] w-[1580px] translate-x-[-50%] translate-y-[-45%]">
+      <img
+        class="w-full"
+        src="@/assets/images/media-sec-bg.svg"
+        alt=""
+        loading="lazy"
+      >
+    </div>
+    <div class="relative mb-6 flex items-stretch rounded-lg overflow-clip divide-x divide-[#4c4c4c] border border-[#4c4c4c] overflow-x-auto mx-auto max-w-[1200px]">
       <button
         v-for="item in tabs"
         :key="item.key"
@@ -13,7 +21,7 @@
         {{ item.label }}
       </button>
     </div>
-    <div class="rounded-lg overflow-clip border border-[#4c4c4c] p-6 mx-auto max-w-[1200px] xl:p-[64px] md:mb-10">
+    <div class="bg-black/40 relative rounded-lg overflow-clip border border-[#4c4c4c] p-6 mx-auto max-w-[1200px] xl:p-[64px] md:mb-10">
       <div v-show="selectedTab === tabs[0].key">
         <h5
           v-if="props.data?.videos?.label"

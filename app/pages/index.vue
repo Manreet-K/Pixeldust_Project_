@@ -43,7 +43,7 @@
     <div class="pointer-events-none absolute top-[50%] left-[50%] w-[1580px] translate-x-[-50%] translate-y-[-40%]">
       <img
         class="w-full"
-        src="@/assets/images/shade-curve-2.svg"
+        src="@/assets/images/shade-curve-sm.svg"
         alt=""
         loading="lazy"
       >

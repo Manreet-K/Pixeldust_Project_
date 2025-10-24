@@ -1,6 +1,11 @@
 <template>
   <section class="px-6 py-20 md:py-[100px]">
-    <div class="gap-y-[50px] flex flex-col items-center mx-auto max-w-[730px]">
+    <div
+      class="gap-y-[50px] flex flex-col items-center mx-auto max-w-[730px]"
+      :style="{
+        maxWidth: props.headingWidth ? `${props.headingWidth}px` : ''
+      }"
+    >
       <h2
         class="text-center font-medium tracking-tight leading-tight text-[36px] md:text-[56px]"
         v-html="props.title"
@@ -20,6 +25,7 @@
 import { useModal } from "~/composables/useScheduleModal.js";
 const props = defineProps({
   title: String,
+  headingWidth: Number
 })
 const { openModal } = useModal();
 </script>

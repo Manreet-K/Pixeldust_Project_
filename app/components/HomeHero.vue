@@ -81,8 +81,8 @@ const prItems = [
     image: IconESRA
   },
   {
-    title: 'Multi Lingual Chatbot',
-    link: '/projects/multi-lingual-chatbot',
+    title: 'MultiLingual Chatbot',
+    link: '/projects/multilingual-chatbot',
     image: IconMLC
   }
 ]

@@ -59,15 +59,15 @@ export default {
       label: 'See Insights Studio in Action',
       list: [
         {
-          title: 'Automating Month-End Close with Agents',
+          title: 'Building a Predictive Model in Minutes',
           videoUrl: 'https://www.youtube.com/watch?v=D0UnqGm_miA'
         },
         {
-          title: 'Conversational Finance: How CFOs Ask, Meeru Answers',
+          title: 'Automating Analytics Pipelines with No Code',
           videoUrl: 'https://www.youtube.com/watch?v=D0UnqGm_miA'
         },
         {
-          title: 'Integrating Meeru.ai with Your ERP in Minutes',
+          title: 'From Data Chaos to Enterprise Intelligence',
           videoUrl: 'https://www.youtube.com/watch?v=D0UnqGm_miA'
         }
       ]
@@ -77,17 +77,17 @@ export default {
       list: [
         {
           title: 'Automating Month-End Close with Agents',
-          videoUrl: '/sample-pdf.pdf',
+          url: '/sample-pdf.pdf',
           image: IconBubble,
         },
         {
           title: 'Automating Analytics Pipelines with No Code',
-          videoUrl: '/sample-pdf.pdf',
+          url: '/sample-pdf.pdf',
           image: IconTriangle,
         },
         {
           title: 'From Data Chaos to Enterprise Intelligence',
-          videoUrl: '/sample-pdf.pdf',
+          url: '/sample-pdf.pdf',
           image: IconBox,
         },
       ]
@@ -96,15 +96,15 @@ export default {
       label: 'See Insights Studio Tutorials',
       list: [
         {
-          title: 'Automating Month-End Close with Agents',
+          title: 'Building a Predictive Model in Minutes',
           videoUrl: 'https://www.youtube.com/watch?v=D0UnqGm_miA'
         },
         {
-          title: 'Conversational Finance: How CFOs Ask, Meeru Answers',
+          title: 'Automating Analytics Pipelines with No Code',
           videoUrl: 'https://www.youtube.com/watch?v=D0UnqGm_miA'
         },
         {
-          title: 'Integrating Meeru.ai with Your ERP in Minutes',
+          title: 'From Data Chaos to Enterprise Intelligence',
           videoUrl: 'https://www.youtube.com/watch?v=D0UnqGm_miA'
         }
       ]
