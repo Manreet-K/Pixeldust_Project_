@@ -18,9 +18,8 @@
     <!-- Netlify form -->
     <form
       v-else
-      netlify
-      action="/"
-      method="POST"
+      data-netlify="true"
+      action="./success.html"
       name="RequestAccessForm"
       class="flex flex-col items-stretch w-full gap-4"
     >
