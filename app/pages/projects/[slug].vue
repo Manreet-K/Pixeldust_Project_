@@ -12,6 +12,10 @@
       v-else-if="cmp._component ==='featuresSection'"
       v-bind="getComponentProps(cmp)"
     />
+    <ImageGridGallery
+      v-else-if="cmp._component ==='galleryGridSection'"
+      v-bind="getComponentProps(cmp)"
+    />
     <ProductMediaData
       v-else-if="cmp._component ==='mediaData'"
       :data="getComponentProps(cmp)"
