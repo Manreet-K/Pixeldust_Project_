@@ -36,6 +36,7 @@ import DsaData from '~/utils/data-analyst-agent.js';
 import EpSrData from '~/utils/enterprise-search-agent.js';
 import multilingualChatbotData from '~/utils/multilingual-chatbot.js';
 import customAgentData from '~/utils/custom-agent.js';
+import agentXPlatformData from '~/utils/agentx-platform.js';
 
 const route = useRoute()
 const slug = route.params.slug
@@ -68,6 +69,9 @@ const initPage = () => {
   }
   else if(slug === 'custom-agent') {
     pageData.value = customAgentData
+  }
+  else if(slug === 'agentx-platform') {
+    pageData.value = agentXPlatformData
   }
   else {
     pageData.value = null

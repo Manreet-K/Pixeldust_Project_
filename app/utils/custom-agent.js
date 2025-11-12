@@ -1,10 +1,4 @@
-import IconPermission from '../assets/images/icons/icon-permission.svg';
-import IconTranslation from '../assets/images/icons/icon-language-translator.svg';
-import IconRetention from '../assets/images/icons/icon-retention.svg';
-import IconMic from '../assets/images/icons/icon-mic.svg';
-import IconRecycle from '../assets/images/icons/icon-lifecycle.svg';
-import IconLearning from '../assets/images/icons/icon-learning.svg';
-
+/* Custom agents page data map */
 export default [
   {
     _component: 'heroSection',
@@ -16,6 +10,7 @@ export default [
     headingMaxWidth: 860,
     leaderMaxWidth: 940,
     hideCTA: true,
+    hideSpacer: true,
   },
   {
     _component: 'galleryGridSection',
@@ -25,97 +20,102 @@ export default [
       {
         title: 'S&OP Business Case',
         url: '#ref-link',
-        image: IconTranslation
+        image: '/icons/icon-suitcase.svg'
       },
       {
         title: 'The Art of Possible for Pharma Industry',
         url: '#ref-link',
-        image: IconRetention
+        image: '/icons/icon-pill.svg'
       },
       {
         title: 'Deep Dive into Sales Forecasting',
         url: '#ref-link',
-        image: IconRecycle
+        image: '/icons/icon-trends.svg'
       },
       {
         title: 'Multi-agent ITSM App',
         url: '#ref-link',
-        image: IconMic
+        image: '/icons/icon-devices.svg'
       },
       {
         title: 'Explore Supply Chain Capability of CriticalRiver',
         url: '#ref-link',
-        image: IconPermission
+        image: '/icons/icon-truck.svg'
       },
       {
         title: 'Deep Dive into Demand Forecasting',
         url: '#ref-link',
-        image: IconLearning
+        image: '/icons/icon-cube.svg'
       },
       {
         title: 'Healthcare Solution Capabilities',
         url: '#ref-link',
-        image: IconLearning
+        image: '/icons/icon-plus.svg'
       },
       {
         title: 'CRM Agentic Solution',
         url: '#ref-link',
-        image: IconLearning
+        image: '/icons/icon-user.svg'
       },
       {
         title: 'Demand Planning using Matching Products',
         url: '#ref-link',
-        image: IconLearning
+        image: '/icons/icon-chart.svg'
       },
       {
         title: 'Deep Dive into Price Elasticity',
         url: '#ref-link',
-        image: IconLearning
+        image: '/icons/icon-elasticity.svg'
       },
       {
         title: 'Deep Dive into Production Scheduling',
         url: '#ref-link',
-        image: IconLearning
+        image: '/icons/icon-schedule.svg'
       },
       {
         title: 'Unified Procurement Dashboard',
         url: '#ref-link',
-        image: IconLearning
+        image: '/icons/icon-dashboard.svg'
       },
       {
         title: 'X-ray Analayzer App',
         url: '#ref-link',
-        image: IconLearning
+        image: '/icons/icon-xray.svg'
       },
       {
         title: 'Multi-Agent Employee Compliance App',
         url: '#ref-link',
-        image: IconLearning
+        image: '/icons/icon-shield.svg'
       },
       {
         title: 'Modern Industry Apps',
         url: '#ref-link',
-        image: IconLearning
+        image: '/icons/icon-apps.svg'
       },
       {
         title: 'Document classifier (local OCR)',
         url: '#ref-link',
-        image: IconLearning
+        image: '/icons/icon-doc.svg'
       },
       {
         title: 'MeeruAI AP Agent',
         url: '#ref-link',
-        image: IconLearning
+        image: '/icons/icon-coin-hand.svg'
+      },
+      {
+        title: 'MeeruAI AR Agent',
+        url: '#ref-link',
+        image: '/icons/icon-meru-ai.svg'
       },
       {
         title: 'MeeruAI Recon Agent',
         url: '#ref-link',
-        image: IconLearning
+        image: '/icons/icon-check.svg'
       },
       {
         title: 'Company Finance Analysis Agent',
         url: '#ref-link',
-        image: IconLearning
+        image: '/icons/icon-graph.svg'
       }
     ]
   },
@@ -127,37 +127,37 @@ export default [
       {
         title: 'Scalable Data Engineering Automation',
         url: '#ref-link',
-        image: IconTranslation
+        image: '/icons/icon-scaleable.svg'
       },
       {
         title: 'MLOps Platform',
         url: '#ref-link',
-        image: IconRetention
+        image: '/icons/icon-brain-crt.svg'
       },
       {
         title: 'Multilingual Chatbot Builder',
         url: '#ref-link',
-        image: IconRecycle
+        image: '/icons/icon-bot-chat.svg'
       },
       {
         title: 'Agentic AI Platform Tour',
         url: '#ref-link',
-        image: IconMic
+        image: '/icons/icon-bot.svg'
       },
       {
         title: 'Supply-Chain Radar - n8n deep dive',
         url: '#ref-link',
-        image: IconPermission
+        image: '/icons/icon-radar.svg'
       },
       {
         title: 'LLM and LangGraph Deep Dive',
         url: '#ref-link',
-        image: IconLearning
+        image: '/icons/icon-ai-star.svg'
       },
       {
         title: 'Open Source Multi-Agent Development Framework',
         url: '#ref-link',
-        image: IconLearning
+        image: '/icons/icon-asetrix.svg'
       }
     ]
   },
@@ -169,22 +169,22 @@ export default [
       {
         title: 'Transforming R&D of a Biotech Company',
         url: '#ref-link',
-        image: IconTranslation
+        image: '/icons/icon-scope.svg'
       },
       {
         title: 'Manufacturing Use Case Discovery Workshops',
         url: '#ref-link',
-        image: IconRetention
+        image: '/icons/icon-industry.svg'
       },
       {
         title: 'ERP Use Case Workshop',
         url: '#ref-link',
-        image: IconRecycle
+        image: '/icons/icon-building.svg'
       },
       {
         title: 'AI Bootcamp',
         url: '#ref-link',
-        image: IconMic
+        image: '/icons/icon-brain.svg'
       }
     ]
   },

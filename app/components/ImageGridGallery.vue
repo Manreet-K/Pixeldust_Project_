@@ -10,7 +10,7 @@
         loading="lazy"
       >
     </div>
-    <div class="mx-auto max-w-[1220px] backdrop-blur-xs">
+    <div class="mx-auto max-w-[1220px] bg-black/80 backdrop-blur-xs rounded-t-lg">
       <div class="head-box gap-y-3 py-8 border border-b-0 border-[#4c4c4c] md:py-10">
         <h2
           class="max-w-[620px] font-medium tracking-tight leading-tight text-[36px] md:text-[40px]"
@@ -30,12 +30,14 @@
         <a
           v-for="(item, i) in points"
           :key="`a_${i}`"
-          class="grid-item -mb-px -mr-px p-6 border border-[#4c4c4c] md:p-[26px]"
+          class="grid-item -mb-px -mr-px p-6 border border-[#4c4c4c] md:p-[26px] md:min-h-[200px]"
           target="_blank"
           :href="item.url"
         >
-          <img class="mb-6 size-12 shrink-0 md:mt-6" :src="item.image" alt="" loading="lazy" />
-          <h4 class="font-medium leading-snug text-[20px]">{{ item.title }}</h4>
+          <div class="mb-6 size-12 shrink-0 md:mt-[18px]">
+            <img class="w-full h-full object-cover" :src="item.image" alt="" loading="lazy" />
+          </div>
+          <h4 class="font-medium leading-snug text-base md:text-[20px]">{{ item.title }}</h4>
           <p
             v-if="item.description"
             class="text-[#8F8F8F] text-base mt-4">
@@ -63,7 +65,7 @@ const props = defineProps({
   .head-box {
     @apply flex flex-col items-center text-center rounded-t-[8px];
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      linear-gradient(133.58deg, rgba(255, 107, 53, 0.6) -52.96%, rgba(3, 2, 2, 0.6) 21.78%);
+      linear-gradient(133.58deg, rgba(255, 107, 53, 1) -52.96%, rgba(3, 2, 2, 0.6) 21.78%);
 
   }
   .grid-container > * {

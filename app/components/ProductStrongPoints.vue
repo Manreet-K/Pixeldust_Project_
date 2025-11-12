@@ -9,18 +9,23 @@
       >
     </div>
     <div class="relative gap-y-6 flex flex-col items-center mx-auto text-center">
-      <div class="text-[#ebebeb] bg-[#303030] uppercase font-mono text-[12px] px-6 py-2.5 rounded-4xl">
+      <div
+        v-if="props.label"
+        class="text-[#ebebeb] bg-[#303030] uppercase font-mono text-[12px] px-6 py-2.5 rounded-4xl"
+      >
         {{ props.label }}
       </div>
       <h2
         class="max-w-[620px] font-medium tracking-tight leading-tight text-[36px] md:text-[56px]"
-        :style="{
-          maxWidth: props.headingWidth ? `${props.headingWidth}px` : ''
-        }"
+        :style="props.headingWidth
+          ? {
+            maxWidth: `${props.headingWidth}px`
+          }:{}
+        "
       >
          {{ props.title }}
       </h2>
-      <p class="text-base text-[#8f8f8f] max-w-[670px]">
+      <p class="text-base text-[#8f8f8f] max-w-[720px]">
         {{ props.description }}
       </p>
     </div>

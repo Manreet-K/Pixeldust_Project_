@@ -40,7 +40,11 @@
       </button>
       <div v-else class="w-full pt-[4%]"></div>
     </div>
-    <div class="hero-spacer"></div>
+    <div
+      v-if="!props.hideSpacer"
+      class="hero-spacer"
+    ></div>
+    <div v-else class="mt-10"></div>
   </section>
   <div
     v-if="props.leaderHeadline"
@@ -68,6 +72,10 @@ const props = defineProps({
   leaderMaxWidth: Number,
   ctaText: String,
   hideCTA: {
+    type: Boolean,
+    default: false
+  },
+  hideSpacer: {
     type: Boolean,
     default: false
   }
