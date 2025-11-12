@@ -18,7 +18,7 @@
 
         <NuxtLink
           class="m-link"
-          to="/"
+          to="/projects/custom-agent"
           @click="closeMenu"
         >Innovation Gallery</NuxtLink>
 
