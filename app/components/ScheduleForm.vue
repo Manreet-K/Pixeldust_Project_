@@ -3,6 +3,7 @@
     <h4 class="leading-tight tracking-tight text-[18px] font-semibold mb-6 md:text-[24px]">
       Request Sandbox Access
     </h4>
+
     <!-- Success state -->
     <div
       v-if="formSubmitted"
@@ -15,24 +16,24 @@
       </div>
     </div>
 
-    <!-- Netlify form -->
+    <!-- Visible form -->
     <form
       v-else
-      data-netlify="true"
-      action="./success.html"
       name="RequestAccessForm"
       class="flex flex-col items-stretch w-full gap-4"
+      @submit.prevent="handleSubmit"
+      novalidate
     >
-      <!-- Required for Netlify to identify the form -->
-      <input type="hidden" name="form-name" value="RequestAccessForm" />
-
-
       <!-- Honeypot (hidden) -->
       <p class="hidden">
-        <label>Don't fill this out if you're human:
-          <input name="bot-field" />
+        <label>
+          Don't fill this out if you're human:
+          <input name="bot-field" v-model="form.botField" autocomplete="off" />
         </label>
       </p>
+
+      <!-- REQUIRED for Netlify when using AJAX -->
+      <input type="hidden" name="form-name" value="RequestAccessForm" />
 
       <div>
         <input
@@ -40,9 +41,12 @@
           type="text"
           name="name"
           placeholder="Your Name"
+          v-model.trim="form.name"
+          :aria-invalid="!!errors.name"
+          :aria-describedby="errors.name ? 'err-name' : undefined"
           required
         />
-        <div class="f-error" v-if="errors?.name">{{ errors?.name }}</div>
+        <div class="f-error" v-if="errors.name" id="err-name">{{ errors.name }}</div>
       </div>
 
       <div>
@@ -51,9 +55,12 @@
           type="email"
           name="email"
           placeholder="Email ID"
+          v-model.trim="form.email"
+          :aria-invalid="!!errors.email"
+          :aria-describedby="errors.email ? 'err-email' : undefined"
           required
         />
-        <div class="f-error" v-if="errors?.email">{{ errors?.email }}</div>
+        <div class="f-error" v-if="errors.email" id="err-email">{{ errors.email }}</div>
       </div>
 
       <div class="-mb-1">
@@ -62,22 +69,136 @@
           name="message"
           placeholder="Your Message"
           rows="3"
+          v-model.trim="form.message"
+          :aria-invalid="!!errors.message"
+          :aria-describedby="errors.message ? 'err-message' : undefined"
           required
         />
-        <div class="f-error" v-if="errors?.message">{{ errors?.message }}</div>
+        <div class="f-error" v-if="errors.message" id="err-message">{{ errors.message }}</div>
       </div>
 
       <button
         type="submit"
-        class="main-btn min-w-[180px] mt-1 mr-auto"
+        class="main-btn min-w-[180px] mt-1 mr-auto disabled:opacity-60 disabled:cursor-not-allowed"
+        :disabled="submitting"
       >
-        Submit
+        <span v-if="submitting">Submitting…</span>
+        <span v-else>Submit</span>
       </button>
+
+      <div class="f-error" v-if="submitError">{{ submitError }}</div>
+    </form>
+
+    <!-- Hidden static form so Netlify can detect it at build time (required for AJAX submissions) -->
+    <form
+      name="RequestAccessForm"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      hidden
+    >
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
     </form>
   </div>
 </template>
 
 <script setup>
+// Simple reactive form state
+import { reactive, ref } from 'vue'
+
+const form = reactive({
+  name: '',
+  email: '',
+  message: '',
+  botField: '' // honeypot
+})
+
+const errors = reactive({
+  name: '',
+  email: '',
+  message: ''
+})
+
+const formSubmitted = ref(false)
+const submitting = ref(false)
+const submitError = ref('')
+
+// --- Validation ---
+function validate () {
+  // reset errors
+  errors.name = ''
+  errors.email = ''
+  errors.message = ''
+
+  // name
+  if (!form.name) {
+    errors.name = 'Name is required.'
+  } else if (form.name.length < 2) {
+    errors.name = 'Please enter at least 2 characters.'
+  }
+
+  // email
+  if (!form.email) {
+    errors.email = 'Email is required.'
+  } else {
+    // basic email regex
+    const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)
+    if (!emailOk) errors.email = 'Please enter a valid email address.'
+  }
+
+  // message
+  if (!form.message) {
+    errors.message = 'Message is required.'
+  } else if (form.message.length < 10) {
+    errors.message = 'Please provide a bit more detail (min 10 characters).'
+  }
+
+  return !(errors.name || errors.email || errors.message)
+}
+
+// --- Helper to URL-encode form body for Netlify ---
+function toUrlEncoded (data) {
+  return new URLSearchParams(data).toString()
+}
+
+// --- Submit via AJAX to Netlify Forms ---
+async function handleSubmit () {
+  submitError.value = ''
+  if (!validate()) return
+
+  // If honeypot filled, silently abort
+  if (form.botField) {
+    formSubmitted.value = true
+    return
+  }
+
+  submitting.value = true
+  try {
+    // Netlify requires "form-name" field plus all the form fields
+    const payload = {
+      'form-name': 'RequestAccessForm',
+      name: form.name,
+      email: form.email,
+      message: form.message,
+      'bot-field': form.botField
+    }
+
+    // IMPORTANT: post to "/" with x-www-form-urlencoded
+    const res = await fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: toUrlEncoded(payload)
+    })
+
+    if (!res.ok) throw new Error('Submission failed. Please try again.')
+    formSubmitted.value = true
+  } catch (e) {
+    submitError.value = e?.message || 'Something went wrong. Please try again.'
+  } finally {
+    submitting.value = false
+  }
+}
 </script>
 
 <style scoped>
