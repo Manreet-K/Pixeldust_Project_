@@ -18,7 +18,7 @@
     <!-- Netlify form -->
     <form
       v-else
-      name="Appointments"
+      name="RequestAccessForm"
       method="POST"
       data-netlify="true"
       netlify-honeypot="bot-field"
@@ -26,7 +26,7 @@
       class="flex flex-col items-stretch w-full gap-4"
     >
       <!-- Required for Netlify to identify the form -->
-      <input type="hidden" name="form-name" value="Appointment Schedules" />
+      <input type="hidden" name="form-name" value="RequestAccessForm" />
 
       <!-- Honeypot (hidden) -->
       <p class="hidden">
