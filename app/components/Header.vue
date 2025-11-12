@@ -20,7 +20,7 @@
           class="m-link"
           to="/"
           @click="closeMenu"
-        >Solutions</NuxtLink>
+        >Innovation Gallery</NuxtLink>
 
         <NuxtLink
           class="m-link"
