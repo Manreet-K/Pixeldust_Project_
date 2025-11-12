@@ -18,11 +18,10 @@
     <!-- Netlify form -->
     <form
       v-else
-      name="RequestAccessForm"
+      netlify
+      action="/"
       method="POST"
-      data-netlify="true"
-      netlify-honeypot="bot-field"
-      @submit.prevent="handleSubmit"
+      name="RequestAccessForm"
       class="flex flex-col items-stretch w-full gap-4"
     >
       <!-- Required for Netlify to identify the form -->
@@ -72,44 +71,14 @@
       <button
         type="submit"
         class="main-btn min-w-[180px] mt-1 mr-auto"
-        :disabled="isSubmitting"
       >
-        {{ isSubmitting ? 'Sending...' : 'Submit' }}
+        Submit
       </button>
     </form>
   </div>
 </template>
 
 <script setup>
-const formSubmitted = ref(false)
-const isSubmitting = ref(false)
-const errors = ref({
-  name: null,
-  email: null,
-  message: null,
-})
-
-async function handleSubmit(e) {
-  isSubmitting.value = true
-  const form = e.target
-
-  try {
-    // Serialize form body for Netlify
-    const body = new URLSearchParams(new FormData(form)).toString()
-
-    await fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body,
-    })
-
-    formSubmitted.value = true
-  } catch (err) {
-    console.error("Form submission error:", err)
-  } finally {
-    isSubmitting.value = false
-  }
-}
 </script>
 
 <style scoped>
