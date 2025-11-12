@@ -1,6 +1,6 @@
 <template>
   <HomeHero />
-  <section class="px-6 py-[100px] lg:py-[168px]">
+  <section class="px-6 py-[100px] lg:py-[145px]">
     <div class="flex flex-wrap items-center justify-center gap-10 mx-auto max-w-[1050px] lg:justify-evenly">
       <img class="h-[18px]" src="@/assets/images/clients/oracle_logo.svg" alt="" loading="lazy" />
       <img class="h-[28px]" src="@/assets/images/clients/intel_logo.svg" alt="" loading="lazy" />
