@@ -14,7 +14,7 @@
     </div>
     <div class="relative">
       <div class="gap-y-[38px] flex flex-col items-center mx-auto max-w-[1040px]">
-        <h1 class="text-center font-medium tracking-tight leading-tight text-[42px] md:text-[80px]">
+        <h1 class="text-center font-medium tracking-tight leading-tight text-[42px] md:text-[80px] md:leading-[1.2]">
           Empower your enterprise with Decision Intelligence
         </h1>
         <p class="text-lg text-center text-[#8f8f8f] max-w-[550px]">

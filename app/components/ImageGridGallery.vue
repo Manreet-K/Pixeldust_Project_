@@ -11,7 +11,7 @@
       >
     </div>
     <div class="mx-auto max-w-[1220px] bg-black/80 backdrop-blur-xs rounded-t-lg">
-      <div class="head-box gap-y-3 py-8 border border-b-0 border-[#4c4c4c] md:py-10">
+      <div class="head-box gap-y-3 px-5 py-8 border border-b-0 border-[#4c4c4c] md:py-10">
         <h2
           class="max-w-[620px] font-medium tracking-tight leading-tight text-[36px] md:text-[40px]"
           :style="{
@@ -66,7 +66,6 @@ const props = defineProps({
     @apply flex flex-col items-center text-center rounded-t-[8px];
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       linear-gradient(133.58deg, rgba(255, 107, 53, 1) -52.96%, rgba(3, 2, 2, 0.6) 21.78%);
-
   }
   .grid-container > * {
     border-radius: 0;

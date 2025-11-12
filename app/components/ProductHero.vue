@@ -1,6 +1,6 @@
 <template>
   <section class="relative overflow-x-clip px-6 pt-[180px] md:pt-[200px]">
-    <div class="hero-grad pointer-events-none absolute inset-x-0 h-[540px] bottom-0 overflow-clip md:h-[970px] md:top-0 md:bottom-auto">
+    <div class="hero-grad pointer-events-none absolute inset-x-0 h-[540px] bottom-0 overflow-clip md:h-[970px] md:top-[1%] md:bottom-auto">
       <video class="h-full w-full object-cover relative" autoplay muted playsinline="true">
         <source src="~/assets/images/digital_illustration_1920x1080.mp4" type="video/mp4">
       </video>
@@ -22,10 +22,10 @@
     >
       <div
         v-if="props.label"
-        class="text-[#FF7C53] font-medium leading-tight text-[16px] md:text-[26px]"
+        class="text-[#FF7C53] font-medium leading-tight -mt-6 text-[16px] md:text-[26px]"
       >{{ props.label }}</div>
-      <div v-else class="-mb-4"></div>
-      <h1 class="text-center font-medium tracking-tight leading-tight text-[42px] md:text-[80px]">
+      <div v-else class=""></div>
+      <h1 class="text-center font-medium tracking-tight leading-tight text-[42px] md:text-[80px] md:leading-[1.2]">
         {{ props.title }}
       </h1>
       <p class="text-lg text-center text-[#8f8f8f] max-w-[670px]">

@@ -1,8 +1,25 @@
 <template>
-  <section class="px-6 py-[100px] relative overflow-x-clip md:py-[200px]">
-    <div class="pointer-events-none absolute top-[50%] left-[50%] w-[1580px] translate-x-[-50%] translate-y-[-35%]">
+  <section
+    class="px-6 py-[100px] relative overflow-x-clip"
+    :class="[
+      props.lgSpaceReduce ? 'md:py-[120px]': 'md:py-[200px]'
+    ]"
+  >
+    <div
+      v-if="props.lightingLeft"
+      class="pointer-events-none absolute top-[50%] left-[0%] w-[1580px] translate-x-[-50%] translate-y-[-35%]">
       <img
-        class="w-full"
+        class="w-full opacity-50"
+        src="@/assets/images/product-sp-bg.svg"
+        alt=""
+        loading="lazy"
+      >
+    </div>
+    <div
+      v-else
+      class="pointer-events-none absolute top-[50%] left-[50%] w-[1580px] translate-x-[-50%] translate-y-[-35%]">
+      <img
+        class="w-full opacity-60"
         src="@/assets/images/product-sp-bg.svg"
         alt=""
         loading="lazy"
@@ -49,6 +66,14 @@ const props = defineProps({
   description: String,
   label: String,
   headingWidth: Number,
+  lightingLeft: {
+    type: Boolean,
+    default: false
+  },
+  lgSpaceReduce: {
+    type: Boolean,
+    default: false
+  },
   points: {
     type: Array,
     default: () => ([])

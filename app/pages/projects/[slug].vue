@@ -24,6 +24,22 @@
       v-else-if="cmp._component ==='contactSection'"
       v-bind="getComponentProps(cmp)"
     />
+    <FeatureBulletPoints
+      v-else-if="cmp._component ==='featuresBulletsSection'"
+      v-bind="getComponentProps(cmp)"
+    />
+    <ColumnListPointes
+      v-else-if="cmp._component ==='columnPointersSection'"
+      v-bind="getComponentProps(cmp)"
+    />
+    <IntroColumnSection
+      v-else-if="cmp._component ==='introColumnSection'"
+      v-bind="getComponentProps(cmp)"
+    />
+    <MultiFeaturesSection
+      v-else-if="cmp._component ==='multiFeaturesSection'"
+      v-bind="getComponentProps(cmp)"
+    />
   </template>
   <Page404 v-else />
 </template>
@@ -37,6 +53,9 @@ import EpSrData from '~/utils/enterprise-search-agent.js';
 import multilingualChatbotData from '~/utils/multilingual-chatbot.js';
 import customAgentData from '~/utils/custom-agent.js';
 import agentXPlatformData from '~/utils/agentx-platform.js';
+import FeatureBulletPoints from '~/components/FeatureBulletPoints.vue';
+import ColumnListPointes from '~/components/ColumnListPointes.vue';
+import MultiFeaturesSection from '~/components/MultiFeaturesSection.vue';
 
 const route = useRoute()
 const slug = route.params.slug
