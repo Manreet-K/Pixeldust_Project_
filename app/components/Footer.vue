@@ -1,6 +1,6 @@
 <template>
   <footer class="relative px-6 pb-12 pt-[110px] overflow-x-clip footer-bg">
-    <div class="overflow-clip absolute left-[50%] bottom-0 top-[-25%] max-w-auto w-[1700px] translate-x-[-50%] pointer-events-none">
+    <div class="overflow-clip absolute left-[50%] bottom-0 top-[-35%] max-w-auto w-[1700px] translate-x-[-50%] pointer-events-none">
       <img
         class="w-full"
         src="@/assets/images/shade-curve-footer.svg"

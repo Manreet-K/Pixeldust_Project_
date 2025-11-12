@@ -6,8 +6,9 @@ import IconBox from '../assets/images/icons/icon-box.svg';
 import IconBubble from '../assets/images/icons/icon-bubble.svg';
 import IconTriangle from '../assets/images/icons/icon-triangle.svg';
 
-export default {
-  heroSection: {
+export default [
+  {
+    _component: 'heroSection',
     label: 'Data Analyst Agent',
     title:'Turning data into clarity',
     description: `A versatile AI analyst that transforms raw numbers and
@@ -18,7 +19,8 @@ export default {
     headingMaxWidth: 920,
     leaderMaxWidth: 955
   },
-  featuresSection: {
+  {
+    _component: 'featuresSection',
     label: 'Core Capabilities',
     title: 'Built for insightful intelligence',
     description: `From spreadsheets to reports, this agent interprets
@@ -46,7 +48,8 @@ export default {
       }
     ]
   },
-  mediaData: {
+  {
+    _component: 'mediaData',
     videos: {
       label: 'See the Data Analyst Agent in Action',
       list: [
@@ -102,8 +105,9 @@ export default {
       ]
     },
   },
-  contactSection: {
+  {
+    _component: 'contactSection',
     title: 'Transform datasets into decisions with the Analyst Agent.',
     headingMaxWidth: 850
   }
-}
+]

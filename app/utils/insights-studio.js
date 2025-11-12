@@ -7,8 +7,9 @@ import IconBox from '../assets/images/icons/icon-box.svg';
 import IconBubble from '../assets/images/icons/icon-bubble.svg';
 import IconTriangle from '../assets/images/icons/icon-triangle.svg';
 
-export default {
-  heroSection: {
+export default [
+  {
+    _component: 'heroSection',
     label: 'Insights Studio',
     title:'The AI-Native Platform for Enterprise Intelligence',
     description: `Build, automate, and scale data-driven decisions with a unified
@@ -20,7 +21,8 @@ export default {
     headingMaxWidth: 920,
     leaderMaxWidth: 940
   },
-  featuresSection: {
+  {
+    _component: 'featuresSection',
     label: 'Core Capabilities',
     title: 'Built for Intelligent Enterprises',
     description: `Insights Studio helps organizations move beyond dashboards
@@ -54,7 +56,8 @@ export default {
       }
     ]
   },
-  mediaData: {
+  {
+    _component: 'mediaData',
     videos: {
       label: 'See Insights Studio in Action',
       list: [
@@ -110,7 +113,8 @@ export default {
       ]
     },
   },
-  contactSection: {
+  {
+    _component: 'contactSection',
     title: 'Power Enterprise Intelligence with Insights Studio'
   }
-}
+]

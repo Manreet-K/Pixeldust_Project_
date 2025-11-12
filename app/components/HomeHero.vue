@@ -1,12 +1,12 @@
 <template>
   <section class="relative overflow-x-clip px-6 pt-[180px] md:pt-[240px]">
-    <div class="pointer-events-none absolute inset-x-0 top-0 h-[970px] overflow-clip hero-grad">
+    <div class="pointer-events-none absolute inset-x-0 top-0 h-[540px] translate-y-[45%] overflow-clip hero-grad sm:translate-y-0 sm:h-[680px] md:h-[970px]">
       <video class="h-full w-full object-cover relative" autoplay muted playsinline="true">
         <source src="~/assets/images/digital_illustration_1920x1080.mp4" type="video/mp4">
       </video>
       <div class="video-grad"></div>
     </div>
-    <div class="img-grad">
+    <div class="img-grad top-[860px] md:top-[970px]">
       <img
         src="@/assets/images/hero-shade-curve.svg"
         alt=""
@@ -132,7 +132,7 @@ const prItems2 = [
   background: linear-gradient(180deg, rgba(0, 0, 0, 1) 40.02%, rgba(0, 0, 0, 0.9) 52.77%, rgba(0, 0, 0, 0.5) 80.77%);
 }
 .img-grad {
-  @apply pointer-events-none h-[0px] absolute top-[970px] left-[50%] w-[1850px] translate-x-[-50%];
+  @apply pointer-events-none h-[0px] absolute left-[50%] w-[1850px] translate-x-[-50%];
 }
 .img-grad::before {
   content: "";

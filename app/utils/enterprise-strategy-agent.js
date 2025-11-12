@@ -6,8 +6,9 @@ import IconBox from '../assets/images/icons/icon-box.svg';
 import IconBubble from '../assets/images/icons/icon-bubble.svg';
 import IconTriangle from '../assets/images/icons/icon-triangle.svg';
 
-export default {
-  heroSection: {
+export default [
+  {
+    _component: 'heroSection',
     label: 'Enterprise Strategy Agent',
     title:'The orchestrator of intelligent decisions',
     description: `A high-level AI agent that coordinates specialized sub-agents
@@ -18,7 +19,8 @@ export default {
     headingMaxWidth: 920,
     leaderMaxWidth: 950
   },
-  featuresSection: {
+  {
+    _component: 'featuresSection',
     label: 'Core Capabilities',
     title: 'Built for strategic intelligence',
     description: `ESA brings together data, insights, and strategic foresight into one
@@ -46,7 +48,8 @@ export default {
       }
     ]
   },
-  mediaData: {
+  {
+    _component: 'mediaData',
     videos: {
       label: 'See ESA in Action',
       list: [
@@ -102,7 +105,8 @@ export default {
       ]
     },
   },
-  contactSection: {
+  {
+    _component: 'contactSection',
     title: 'Orchestrate intelligent strategy with ESA'
   }
-}
+]

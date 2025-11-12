@@ -8,8 +8,9 @@ import IconBox from '../assets/images/icons/icon-box.svg';
 import IconBubble from '../assets/images/icons/icon-bubble.svg';
 import IconTriangle from '../assets/images/icons/icon-triangle.svg';
 
-export default {
-  heroSection: {
+export default [
+  {
+    _component: 'heroSection',
     label: 'Multilingual Chatbot',
     title: `Speak every customer's language`,
     description: `An AI-powered conversational assistant that understands, translates,
@@ -20,7 +21,8 @@ export default {
     headingMaxWidth: 920,
     leaderMaxWidth: 940
   },
-  featuresSection: {
+  {
+    _component: 'featuresSection',
     label: 'Core Capabilities',
     title: 'Built for global conversations',
     description: `Designed for enterprises that operate worldwide,
@@ -59,7 +61,8 @@ export default {
       }
     ]
   },
-  mediaData: {
+  {
+    _component: 'mediaData',
     videos: {
       label: 'See the Multilingual Chatbot in Action',
       list: [
@@ -78,6 +81,7 @@ export default {
       ]
     },
     docs: {
+      component: 'docs',
       label: 'See Multilingual Chatbot Documentation',
       list: [
         {
@@ -115,8 +119,9 @@ export default {
       ]
     },
   },
-  contactSection: {
+  {
+    _component: 'contactSection',
     title: 'Engage the world in their language',
     headingMaxWidth: 540,
   }
-}
+]

@@ -8,8 +8,9 @@ import IconBox from '../assets/images/icons/icon-box.svg';
 import IconBubble from '../assets/images/icons/icon-bubble.svg';
 import IconTriangle from '../assets/images/icons/icon-triangle.svg';
 
-export default {
-  heroSection: {
+export default [
+  {
+    _component: 'heroSection',
     label: 'Enterprise Search Agent',
     title: 'Find what matters fast',
     description: `Your internal knowledge librarian that locates the right document,
@@ -20,7 +21,8 @@ export default {
     headingMaxWidth: 920,
     leaderMaxWidth: 955
   },
-  featuresSection: {
+  {
+    _component: 'featuresSection',
     label: 'Core Capabilities',
     title: 'Built for knowledge at work',
     description: `Reduce rework, speed onboarding, and
@@ -58,7 +60,8 @@ export default {
       }
     ]
   },
-  mediaData: {
+  {
+    _component: 'mediaData',
     videos: {
       label: 'See Enterprise Search Agent in Action',
       list: [
@@ -114,7 +117,8 @@ export default {
       ]
     },
   },
-  contactSection: {
+  {
+    _component: 'contactSection',
     title: 'Put your institutional knowledge to work',
   }
-}
+]

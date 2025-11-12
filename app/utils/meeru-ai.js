@@ -6,8 +6,9 @@ import IconBox from '../assets/images/icons/icon-box.svg';
 import IconBubble from '../assets/images/icons/icon-bubble.svg';
 import IconTriangle from '../assets/images/icons/icon-triangle.svg';
 
-export default {
-  heroSection: {
+export default [
+  {
+    _component: 'heroSection',
     label: 'Meeru.ai',
     title:'The AI Operating system for the CFO',
     description: `Transform finance from a reactive function into a proactive,
@@ -17,7 +18,8 @@ export default {
       It goes beyond dashboards - orchestrating no-code, agent-driven workflows that streamline accounting,
       ensure data integrity, and turn financial data into strategic advantage.`
   },
-  featuresSection: {
+  {
+    _component: 'featuresSection',
     label: 'Key Features',
     title: 'Built for the modern finance leader',
     description: `From automation to auditability, Meeru.ai empowers CFOs with intelligent tools
@@ -45,7 +47,8 @@ export default {
       }
     ]
   },
-  mediaData: {
+  {
+    _component: 'mediaData',
     videos: {
       label: 'See Meeru.ai in Action',
       list: [
@@ -101,7 +104,8 @@ export default {
       ]
     },
   },
-  contactSection: {
+  {
+    _component: 'contactSection',
     title: 'Experience the future of finance automation'
   }
-}
+]
