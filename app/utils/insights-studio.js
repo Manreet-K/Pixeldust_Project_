@@ -95,7 +95,7 @@ export default [
         },
         {
           title: 'Explore the Solution Accelerators',
-          url: 'https://drive.google.com/file/d/1ady8iONu87inv0prDIxigYhZwmmRkLHM/view?usp=drive_link',
+          url: 'https://drive.google.com/file/d/1NR3ZCg1iQAHLCnyGoMDY5KUMspjFrUs4/view?usp=drive_link',
           image: IconBox,
         },
       ]
