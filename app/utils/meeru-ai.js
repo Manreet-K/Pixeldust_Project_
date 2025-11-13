@@ -68,23 +68,6 @@ export default [
         },
       ]
     },
-    tutorials: {
-      label: 'See Meeru.ai Tutorials',
-      list: [
-        {
-          title: 'Automating Month-End Close with Agents',
-          videoUrl: 'https://www.youtube.com/watch?v=D0UnqGm_miA'
-        },
-        {
-          title: 'Conversational Finance: How CFOs Ask, Meeru Answers',
-          videoUrl: 'https://www.youtube.com/watch?v=D0UnqGm_miA'
-        },
-        {
-          title: 'Integrating Meeru.ai with Your ERP in Minutes',
-          videoUrl: 'https://www.youtube.com/watch?v=D0UnqGm_miA'
-        }
-      ]
-    },
   },
   {
     _component: 'contactSection',
