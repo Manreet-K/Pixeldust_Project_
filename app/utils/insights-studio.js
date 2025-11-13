@@ -63,11 +63,11 @@ export default [
       list: [
         {
           title: 'Building a Predictive Model in Minutes',
-          videoUrl: 'https://www.youtube.com/watch?v=D0UnqGm_miA'
+          videoUrl: 'https://youtu.be/iQeNfBA2RFw'
         },
         {
-          title: 'Automating Analytics Pipelines with No Code',
-          videoUrl: 'https://www.youtube.com/watch?v=D0UnqGm_miA'
+          title: 'Automating ETL, Analytics and ML Pipelines with No Code',
+          videoUrl: 'https://youtu.be/babQaBkHG74'
         },
         {
           title: 'From Data Chaos to Enterprise Intelligence',
@@ -79,18 +79,23 @@ export default [
       label: 'See Insights Studio Documentation',
       list: [
         {
-          title: 'Automating Month-End Close with Agents',
-          url: '/sample-pdf.pdf',
+          title: 'Overview of Insight Studio Platform',
+          url: 'https://drive.google.com/file/d/1KynALfMBQNdlY7eBa7XsBwUdKEap6Rwx/view?usp=drive_link',
           image: IconBubble,
         },
         {
-          title: 'Automating Analytics Pipelines with No Code',
-          url: '/sample-pdf.pdf',
+          title: 'Data Engineering Automation with No Code',
+          url: 'https://drive.google.com/file/d/1ZmfowQli1qPRLqRJqWBh2-zT43lk4lOD/view?usp=drive_link',
           image: IconTriangle,
         },
         {
-          title: 'From Data Chaos to Enterprise Intelligence',
-          url: '/sample-pdf.pdf',
+          title: 'Machine Learning Automation for Enterprise',
+          url: 'https://drive.google.com/file/d/1ady8iONu87inv0prDIxigYhZwmmRkLHM/view?usp=drive_link',
+          image: IconBox,
+        },
+        {
+          title: 'Explore the Solution Accelerators',
+          url: 'https://drive.google.com/file/d/1ady8iONu87inv0prDIxigYhZwmmRkLHM/view?usp=drive_link',
           image: IconBox,
         },
       ]
