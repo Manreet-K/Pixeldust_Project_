@@ -66,6 +66,23 @@
         <div class="f-error" v-if="errors.email" id="err-email">{{ errors.email }}</div>
       </div>
 
+      <div>
+        <select
+          class="f-input"
+          name="productInterest"
+          placeholder="Product Interest"
+          required
+          v-model="form.productInterest"
+        >
+          <option value="" disabled selected>Select Product Interest</option>
+          <option value="meeru-ai">Meeru AI</option>
+          <option value="insights-studio">Insights Studio</option>
+          <option value="agentx-platform">AgentX Platform</option>
+          <option value="multilingual-chatbot">MultiLingual Chatbot</option>
+        </select> 
+        <div class="f-error" v-if="errors.productInterest" id="err-productInterest">{{ errors.productInterest }}</div>  
+      </div>
+
       <div class="-mb-1">
         <textarea
           class="f-input"
@@ -80,6 +97,7 @@
         <div class="f-error" v-if="errors.message" id="err-message">{{ errors.message }}</div>
       </div>
 
+     
       <button
         type="submit"
         class="main-btn min-w-[180px] mt-1 mr-auto disabled:opacity-60 disabled:cursor-not-allowed"
@@ -101,13 +119,15 @@ const form = reactive({
   name: '',
   email: '',
   message: '',
-  botField: ''
+  botField: '',
+  productInterest: ''
 })
 
 const errors = reactive({
   name: '',
   email: '',
-  message: ''
+  message: '',
+  productInterest: ''
 })
 
 const formSubmitted = ref(false)
@@ -118,11 +138,15 @@ function validate () {
   errors.name = ''
   errors.email = ''
   errors.message = ''
+  errors.productInterest = ''
 
   if (!form.name) {
     errors.name = 'Name is required.'
   } else if (form.name.length < 2) {
     errors.name = 'Please enter at least 2 characters.'
+  }
+  if (!form.productInterest) {
+    errors.productInterest = 'Product Interest is required.'
   }
 
   if (!form.email) {
@@ -138,7 +162,7 @@ function validate () {
     errors.message = 'Please provide a bit more detail (min 10 characters).'
   }
 
-  return !(errors.name || errors.email || errors.message)
+  return !(errors.name || errors.email || errors.message || errors.productInterest)
 }
 
 function toUrlEncoded (data) {
@@ -162,7 +186,8 @@ async function handleSubmit () {
       name: form.name,
       email: form.email,
       message: form.message,
-      'bot-field': form.botField
+      'bot-field': form.botField,
+      productInterest: form.productInterest
     }
 
     const res = await fetch('/', {
