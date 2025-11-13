@@ -16,24 +16,27 @@
       </div>
     </div>
 
-    <!-- Visible form -->
+    <!-- Netlify form -->
     <form
       v-else
       name="RequestAccessForm"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
       class="flex flex-col items-stretch w-full gap-4"
       @submit.prevent="handleSubmit"
       novalidate
     >
-      <!-- Honeypot (hidden) -->
+      <!-- required by Netlify when using AJAX -->
+      <input type="hidden" name="form-name" value="RequestAccessForm" />
+
+      <!-- Honeypot -->
       <p class="hidden">
         <label>
           Don't fill this out if you're human:
           <input name="bot-field" v-model="form.botField" autocomplete="off" />
         </label>
       </p>
-
-      <!-- REQUIRED for Netlify when using AJAX -->
-      <input type="hidden" name="form-name" value="RequestAccessForm" />
 
       <div>
         <input
@@ -88,30 +91,17 @@
 
       <div class="f-error" v-if="submitError">{{ submitError }}</div>
     </form>
-
-    <!-- Hidden static form so Netlify can detect it at build time (required for AJAX submissions) -->
-    <form
-      name="RequestAccessForm"
-      data-netlify="true"
-      netlify-honeypot="bot-field"
-      hidden
-    >
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
-    </form>
   </div>
 </template>
 
 <script setup>
-// Simple reactive form state
 import { reactive, ref } from 'vue'
 
 const form = reactive({
   name: '',
   email: '',
   message: '',
-  botField: '' // honeypot
+  botField: ''
 })
 
 const errors = reactive({
@@ -124,30 +114,24 @@ const formSubmitted = ref(false)
 const submitting = ref(false)
 const submitError = ref('')
 
-// --- Validation ---
 function validate () {
-  // reset errors
   errors.name = ''
   errors.email = ''
   errors.message = ''
 
-  // name
   if (!form.name) {
     errors.name = 'Name is required.'
   } else if (form.name.length < 2) {
     errors.name = 'Please enter at least 2 characters.'
   }
 
-  // email
   if (!form.email) {
     errors.email = 'Email is required.'
   } else {
-    // basic email regex
     const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)
     if (!emailOk) errors.email = 'Please enter a valid email address.'
   }
 
-  // message
   if (!form.message) {
     errors.message = 'Message is required.'
   } else if (form.message.length < 10) {
@@ -157,17 +141,15 @@ function validate () {
   return !(errors.name || errors.email || errors.message)
 }
 
-// --- Helper to URL-encode form body for Netlify ---
 function toUrlEncoded (data) {
   return new URLSearchParams(data).toString()
 }
 
-// --- Submit via AJAX to Netlify Forms ---
 async function handleSubmit () {
   submitError.value = ''
   if (!validate()) return
 
-  // If honeypot filled, silently abort
+  // Honeypot – if filled, silently succeed
   if (form.botField) {
     formSubmitted.value = true
     return
@@ -175,7 +157,6 @@ async function handleSubmit () {
 
   submitting.value = true
   try {
-    // Netlify requires "form-name" field plus all the form fields
     const payload = {
       'form-name': 'RequestAccessForm',
       name: form.name,
@@ -184,14 +165,18 @@ async function handleSubmit () {
       'bot-field': form.botField
     }
 
-    // IMPORTANT: post to "/" with x-www-form-urlencoded
     const res = await fetch('/', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+      },
       body: toUrlEncoded(payload)
     })
 
-    if (!res.ok) throw new Error('Submission failed. Please try again.')
+    if (!res.ok) {
+      throw new Error('Submission failed. Please try again.')
+    }
+
     formSubmitted.value = true
   } catch (e) {
     submitError.value = e?.message || 'Something went wrong. Please try again.'
@@ -202,7 +187,6 @@ async function handleSubmit () {
 </script>
 
 <style scoped>
-/* Form css START  */
 .f-error {
   @apply text-[12px] text-[#ff0000] mt-[4px];
 }
@@ -213,5 +197,4 @@ async function handleSubmit () {
 textarea.f-input {
   resize: none;
 }
-/* Form css END  */
 </style>
