@@ -18,13 +18,13 @@ export default [
     description: `(ERP, CRM, Sales, Marketing, HR, IT Service, HCLS, Pharma)`,
     points: [
       {
-        title: 'S&OP Business Case',
-        url: '#ref-link',
+        title: 'Explore S&OP Business Case',
+        url: 'https://app.storylane.io/share/joz6iyf5o4hr',
         image: '/icons/icon-suitcase.svg'
       },
       {
         title: 'The Art of Possible for Pharma Industry',
-        url: '#ref-link',
+        url: 'https://app.storylane.io/share/zdzhfizgem7d',
         image: '/icons/icon-pill.svg'
       },
       {
@@ -34,17 +34,17 @@ export default [
       },
       {
         title: 'Multi-agent ITSM App',
-        url: '#ref-link',
+        url: 'https://app.storylane.io/share/euavnomtvuww',
         image: '/icons/icon-devices.svg'
       },
       {
-        title: 'Explore Supply Chain Capability of CriticalRiver',
-        url: '#ref-link',
+        title: 'Supply Chain Capability of CriticalRiver',
+        url: 'https://app.storylane.io/share/5yrdrizcjz1o',
         image: '/icons/icon-truck.svg'
       },
       {
         title: 'Deep Dive into Demand Forecasting',
-        url: '#ref-link',
+        url: 'https://app.storylane.io/share/yw4zc4eojnrk',
         image: '/icons/icon-cube.svg'
       },
       {
@@ -64,7 +64,7 @@ export default [
       },
       {
         title: 'Deep Dive into Price Elasticity',
-        url: '#ref-link',
+        url: 'https://app.storylane.io/share/yfrqebpmeuqa',
         image: '/icons/icon-elasticity.svg'
       },
       {
@@ -74,46 +74,56 @@ export default [
       },
       {
         title: 'Unified Procurement Dashboard',
-        url: '#ref-link',
+        url: 'https://app.storylane.io/share/ti4mjmppmtyk',
         image: '/icons/icon-dashboard.svg'
       },
       {
         title: 'X-ray Analayzer App',
-        url: '#ref-link',
+        url: 'https://app.storylane.io/share/9zvr6pb8ouws',
         image: '/icons/icon-xray.svg'
       },
       {
         title: 'Multi-Agent Employee Compliance App',
-        url: '#ref-link',
+        url: 'https://app.storylane.io/share/3zbh7ew1jecl',
         image: '/icons/icon-shield.svg'
       },
       {
-        title: 'Modern Industry Apps',
-        url: '#ref-link',
+        title: 'Industry Demand Planning App',
+        url: 'https://app.storylane.io/share/4uscxwskds6z',
         image: '/icons/icon-apps.svg'
       },
       {
         title: 'Document classifier (local OCR)',
-        url: '#ref-link',
+        url: 'https://app.storylane.io/share/o89obg5ev1ec',
         image: '/icons/icon-doc.svg'
       },
       {
-        title: 'MeeruAI AP Agent',
-        url: '#ref-link',
+        title: 'MeeruAI AP Vendor Agent',
+        url: 'https://app.storylane.io/share/mspt8qpes4ph',
         image: '/icons/icon-coin-hand.svg'
       },
       {
-        title: 'MeeruAI AR Agent',
-        url: '#ref-link',
+        title: 'MeeruAI AP Bills Agent',
+        url: 'https://app.storylane.io/share/tenhgtkwz5qh',
+        image: '/icons/icon-coin-hand.svg'
+      },
+      {
+        title: 'MeeruAI AR Invoice Agent',
+        url: 'https://app.storylane.io/share/riqb3vmhypmy',
         image: '/icons/icon-meru-ai.svg'
       },
       {
-        title: 'MeeruAI Recon Agent',
-        url: '#ref-link',
+        title: 'MeeruAI AR Aging Agent',
+        url: 'https://app.storylane.io/share/n0gk8ltnvbg1',
         image: '/icons/icon-check.svg'
       },
       {
-        title: 'Company Finance Analysis Agent',
+        title: 'Company Finance Health Analyst',
+        url: 'https://app.storylane.io/share/9zltcrb6ykye',
+        image: '/icons/icon-graph.svg'
+      },
+      {
+        title: 'Company Marketing Ad-Optimization Agent',
         url: '#ref-link',
         image: '/icons/icon-graph.svg'
       }
@@ -125,8 +135,8 @@ export default [
     description: '',
     points: [
       {
-        title: 'Scalable Data Engineering Automation',
-        url: '#ref-link',
+        title: 'Scalable Data Engineering Automation Platform',
+        url: 'https://app.storylane.io/share/apjts72nktrq',
         image: '/icons/icon-scaleable.svg'
       },
       {
@@ -145,18 +155,18 @@ export default [
         image: '/icons/icon-bot.svg'
       },
       {
-        title: 'Supply-Chain Radar - n8n deep dive',
-        url: '#ref-link',
+        title: 'Supply-Chain Radar App - n8n deep dive',
+        url: 'https://app.storylane.io/share/evcr4oryoxn9',
         image: '/icons/icon-radar.svg'
       },
       {
         title: 'LLM and LangGraph Deep Dive',
-        url: '#ref-link',
+        url: 'https://app.storylane.io/share/qfcvmhqyuz8t',
         image: '/icons/icon-ai-star.svg'
       },
       {
         title: 'Open Source Multi-Agent Development Framework',
-        url: '#ref-link',
+        url: 'https://app.storylane.io/share/jkkxcdgmxipi',
         image: '/icons/icon-asetrix.svg'
       }
     ]
@@ -172,8 +182,8 @@ export default [
         image: '/icons/icon-scope.svg'
       },
       {
-        title: 'Manufacturing Use Case Discovery Workshops',
-        url: '#ref-link',
+        title: 'Manufacturing AI Use Case Discovery Workshops',
+        url: 'https://app.storylane.io/share/y8silgmn9h9x',
         image: '/icons/icon-industry.svg'
       },
       {
