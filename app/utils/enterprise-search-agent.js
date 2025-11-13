@@ -67,7 +67,7 @@ export default [
       list: [
         {
           title: 'Unlock Hidden Intelligence using Enterprise Search Agent.',
-          videoUrl: 'https://youtu.be/hppX4DPqqkQ?t=217'
+          url: 'https://youtu.be/hppX4DPqqkQ?t=217'
         }
       ]
     },
