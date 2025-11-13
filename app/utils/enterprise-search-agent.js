@@ -66,16 +66,8 @@ export default [
       label: 'See Enterprise Search Agent in Action',
       list: [
         {
-          title: 'Finding project artifacts across systems',
-          videoUrl: 'https://www.youtube.com/watch?v=D0UnqGm_miA'
-        },
-        {
-          title: 'Surfacing best practices and past proposals',
-          videoUrl: 'https://www.youtube.com/watch?v=D0UnqGm_miA'
-        },
-        {
-          title: 'Accelerating onboarding with targeted results',
-          videoUrl: 'https://www.youtube.com/watch?v=D0UnqGm_miA'
+          title: 'Unlock Hidden Intelligence using Enterprise Search Agent.',
+          videoUrl: 'https://youtu.be/hppX4DPqqkQ?t=217'
         }
       ]
     },
@@ -83,36 +75,9 @@ export default [
       label: 'See Enterprise Search Agent Documentation',
       list: [
         {
-          title: 'Automating Month-End Close with Agents',
-          url: '/sample-pdf.pdf',
-          image: IconBubble,
-        },
-        {
-          title: 'Automating Analytics Pipelines with No Code',
-          url: '/sample-pdf.pdf',
-          image: IconTriangle,
-        },
-        {
           title: 'From Data Chaos to Enterprise Intelligence',
-          url: '/sample-pdf.pdf',
-          image: IconBox,
-        },
-      ]
-    },
-    tutorials: {
-      label: 'See Enterprise Search Agent Tutorials',
-      list: [
-        {
-          title: 'Finding project artifacts across systems',
-          videoUrl: 'https://www.youtube.com/watch?v=D0UnqGm_miA'
-        },
-        {
-          title: 'Surfacing best practices and past proposals',
-          videoUrl: 'https://www.youtube.com/watch?v=D0UnqGm_miA'
-        },
-        {
-          title: 'Accelerating onboarding with targeted results',
-          videoUrl: 'https://www.youtube.com/watch?v=D0UnqGm_miA'
+          url: 'https://drive.google.com/file/d/1XhNyZ092FBrfeC6r2-LDWiQYrVopvR-M/view?usp=drive_link',
+          image: IconBubble,
         }
       ]
     },
