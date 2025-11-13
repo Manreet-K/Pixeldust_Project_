@@ -54,7 +54,7 @@ export default [
       list: [
         {
           title: 'Conversational Finance: Accountants Ask, Meeru Answers',
-          videoUrl: 'https://youtu.be/IsBUxPQ0c4A'
+          videoUrl: 'https://www.youtube.com/watch?v=IsBUxPQ0c4A'
         },
       ]
     },
