@@ -55,15 +55,7 @@ export default [
       list: [
         {
           title: 'How ESA Synthesizes Research into Strategy',
-          videoUrl: 'https://www.youtube.com/watch?v=D0UnqGm_miA'
-        },
-        {
-          title: 'Orchestrating AI Sub-Agents for Complex Decisions',
-          videoUrl: 'https://www.youtube.com/watch?v=D0UnqGm_miA'
-        },
-        {
-          title: 'From Data to Direction: ESA in the Enterprise Flow',
-          videoUrl: 'https://www.youtube.com/watch?v=D0UnqGm_miA'
+          videoUrl: 'https://www.youtube.com/watch?v=YAtOAx6Z9Ds'
         }
       ]
     },
@@ -71,37 +63,10 @@ export default [
       label: 'See ESA Documentation',
       list: [
         {
-          title: 'Automating Month-End Close with Agents',
-          url: '/sample-pdf.pdf',
-          image: IconBubble,
-        },
-        {
-          title: 'Automating Analytics Pipelines with No Code',
-          url: '/sample-pdf.pdf',
-          image: IconTriangle,
-        },
-        {
           title: 'From Data Chaos to Enterprise Intelligence',
-          url: '/sample-pdf.pdf',
+          url: 'https://drive.google.com/file/d/1XhNyZ092FBrfeC6r2-LDWiQYrVopvR-M/view?usp=sharing',
           image: IconBox,
         },
-      ]
-    },
-    tutorials: {
-      label: 'See ESA Tutorials',
-      list: [
-        {
-          title: 'How ESA Synthesizes Research into Strategy',
-          videoUrl: 'https://www.youtube.com/watch?v=D0UnqGm_miA'
-        },
-        {
-          title: 'Orchestrating AI Sub-Agents for Complex Decisions',
-          videoUrl: 'https://www.youtube.com/watch?v=D0UnqGm_miA'
-        },
-        {
-          title: 'From Data to Direction: ESA in the Enterprise Flow',
-          videoUrl: 'https://www.youtube.com/watch?v=D0UnqGm_miA'
-        }
       ]
     },
   },
