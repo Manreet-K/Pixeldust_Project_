@@ -19,7 +19,7 @@
     <!-- Netlify form -->
     <form
       v-else
-      name="RequestAccessForm"
+      name="contactForm"
       method="POST"
       data-netlify="true"
       netlify-honeypot="bot-field"
@@ -28,7 +28,7 @@
       novalidate
     >
       <!-- required by Netlify when using AJAX -->
-      <input type="hidden" name="form-name" value="RequestAccessForm" />
+      <input type="hidden" name="form-name" value="contactForm" />
 
       <!-- Honeypot -->
       <p class="hidden">
