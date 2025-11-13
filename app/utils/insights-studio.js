@@ -100,23 +100,6 @@ export default [
         },
       ]
     },
-    tutorials: {
-      label: 'See Insights Studio Tutorials',
-      list: [
-        {
-          title: 'Building a Predictive Model in Minutes',
-          videoUrl: 'https://www.youtube.com/watch?v=D0UnqGm_miA'
-        },
-        {
-          title: 'Automating Analytics Pipelines with No Code',
-          videoUrl: 'https://www.youtube.com/watch?v=D0UnqGm_miA'
-        },
-        {
-          title: 'From Data Chaos to Enterprise Intelligence',
-          videoUrl: 'https://www.youtube.com/watch?v=D0UnqGm_miA'
-        }
-      ]
-    },
   },
   {
     _component: 'contactSection',
