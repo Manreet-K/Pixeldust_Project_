@@ -62,16 +62,16 @@ export default [
       label: 'See Insights Studio in Action',
       list: [
         {
-          title: 'Building a Predictive Model in Minutes',
-          videoUrl: 'https://youtu.be/iQeNfBA2RFw'
+          title: 'From Data Chaos to Enterprise Intelligence',
+          videoUrl: 'https://www.youtube.com/watch?v=iQeNfBA2RFw'
+        },
+        {
+          title: 'Accelerate Industry Solutions',
+          videoUrl: 'https://www.youtube.com/watch?v=TuG-9bRGzhE'
         },
         {
           title: 'Automating ETL, Analytics and ML Pipelines with No Code',
-          videoUrl: 'https://youtu.be/babQaBkHG74'
-        },
-        {
-          title: 'From Data Chaos to Enterprise Intelligence',
-          videoUrl: 'https://www.youtube.com/watch?v=D0UnqGm_miA'
+          videoUrl: 'https://www.youtube.com/watch?v=babQaBkHG74'
         }
       ]
     },
