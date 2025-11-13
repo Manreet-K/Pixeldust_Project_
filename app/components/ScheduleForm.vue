@@ -19,7 +19,7 @@
     <!-- Netlify form -->
     <form
       v-else
-      name="contactForm"
+      name="Request Sandbox Access"
       method="POST"
       data-netlify="true"
       netlify-honeypot="bot-field"
@@ -28,7 +28,7 @@
       novalidate
     >
       <!-- required by Netlify when using AJAX -->
-      <input type="hidden" name="form-name" value="contactForm" />
+      <input type="hidden" name="form-name" value="Request Sandbox Access" />
 
       <!-- Honeypot -->
       <p class="hidden">
@@ -182,7 +182,7 @@ async function handleSubmit () {
   submitting.value = true
   try {
     const payload = {
-      'form-name': 'contactForm',
+      'form-name': 'Request Sandbox Access',
       name: form.name,
       email: form.email,
       message: form.message,
