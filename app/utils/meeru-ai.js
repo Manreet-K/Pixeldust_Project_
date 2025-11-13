@@ -53,17 +53,9 @@ export default [
       label: 'See Meeru.ai in Action',
       list: [
         {
-          title: 'Automating Month-End Close with Agents',
-          videoUrl: 'https://www.youtube.com/watch?v=D0UnqGm_miA'
+          title: 'Conversational Finance: Accountants Ask, Meeru Answers',
+          videoUrl: 'https://youtu.be/IsBUxPQ0c4A'
         },
-        {
-          title: 'Conversational Finance: How CFOs Ask, Meeru Answers',
-          videoUrl: 'https://www.youtube.com/watch?v=D0UnqGm_miA'
-        },
-        {
-          title: 'Integrating Meeru.ai with Your ERP in Minutes',
-          videoUrl: 'https://www.youtube.com/watch?v=D0UnqGm_miA'
-        }
       ]
     },
     docs: {
@@ -71,18 +63,8 @@ export default [
       list: [
         {
           title: 'Automating Month-End Close with Agents',
-          url: '/sample-pdf.pdf',
+          url: 'https://drive.google.com/file/d/18P8sGZ2YtF65tUYefMMrPZSf0lAeJgqV/view?usp=drive_link',
           image: IconBubble,
-        },
-        {
-          title: 'Automating Analytics Pipelines with No Code',
-          url: '/sample-pdf.pdf',
-          image: IconTriangle,
-        },
-        {
-          title: 'From Data Chaos to Enterprise Intelligence',
-          url: '/sample-pdf.pdf',
-          image: IconBox,
         },
       ]
     },
