@@ -158,7 +158,7 @@ async function handleSubmit () {
   submitting.value = true
   try {
     const payload = {
-      'form-name': 'RequestAccessForm',
+      'form-name': 'contactForm',
       name: form.name,
       email: form.email,
       message: form.message,
