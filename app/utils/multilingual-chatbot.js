@@ -11,7 +11,7 @@ import IconTriangle from '../assets/images/icons/icon-triangle.svg';
 export default [
   {
     _component: 'heroSection',
-    label: 'Multilingual Chatbot',
+    label: 'Multilingual Chatbot Builder',
     title: `Speak every customer's language`,
     description: `An AI-powered conversational assistant that understands, translates,
       and responds naturally across languages — ensuring global reach with local empathy.`,
