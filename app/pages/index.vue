@@ -94,8 +94,8 @@ import IconShield from '@/assets/images/icons/icon-shield.svg';
 import IconSupport from '@/assets/images/icons/icon-expert-support.svg';
 
 import SlideImage from '@/assets/images/home/slide-1-image.png';
-import MeeruAIImage from '@/assets/images/home/meeru-ai-image.png';
-import InsightStudioImage from '@/assets/images/home/insight-studio-image.png';
+import MeeruAIImage from '@/assets/images/home/meeru-ai-image.jpg';
+import InsightStudioImage from '@/assets/images/home/insight-studio-image.jpg';
 
 const { openModal } = useModal();
 
