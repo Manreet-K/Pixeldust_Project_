@@ -126,7 +126,7 @@ export default [
       },
       {
         title: 'Multilingual Chatbot Builder',
-        url: '#ref-link',
+        url: 'https://criticalriver.storylane.io/share/fucyjqjlxwjm',
         image: '/icons/icon-bot-chat.svg'
       },
       {
