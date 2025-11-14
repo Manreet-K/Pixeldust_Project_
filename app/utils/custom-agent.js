@@ -14,7 +14,7 @@ export default [
   },
   {
     _component: 'galleryGridSection',
-    title: 'Business Solution Tours',
+    title: 'Business Agent Tours',
     description: `(ERP, CRM, Sales, Marketing, HR, IT Service, HCLS, Pharma)`,
     points: [
       {
@@ -93,7 +93,7 @@ export default [
         image: '/icons/icon-apps.svg'
       },
       {
-        title: 'Document classifier Agent',
+        title: 'Document Classifier Agent',
         url: 'https://app.storylane.io/share/o89obg5ev1ec',
         image: '/icons/icon-doc.svg'
       },
