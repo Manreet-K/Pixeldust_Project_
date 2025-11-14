@@ -131,7 +131,7 @@ export default [
       },
       {
         title: 'Agentic AI Platform',
-        url: '#ref-link',
+        url: 'https://criticalriver.storylane.io/share/hkmlzi849wfr',
         image: '/icons/icon-bot.svg'
       },
       {
