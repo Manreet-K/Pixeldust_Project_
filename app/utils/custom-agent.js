@@ -4,7 +4,7 @@ export default [
     _component: 'heroSection',
     label: '',
     title: `Explore CriticalRiver’s AI Universe`,
-    description: `Experience our Advanced and Agentic AI Capabilities, take Platform Tours,
+    description: `Experience our Agentic AI Capabilities, take Platform Tours,
       and gain Glimpses into Interactive Workshops and Use Case Discovery Sessions.`,
     leaderHeadline: '',
     headingMaxWidth: 860,
