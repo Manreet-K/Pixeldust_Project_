@@ -87,7 +87,7 @@ const prItems = [
     image: IconRobot
   },
   {
-    title: 'MultiLingual Chatbot',
+    title: 'MultiLingual ChatAgent Toolkit',
     link: '/projects/multilingual-chatbot',
     image: IconMLC
   }
