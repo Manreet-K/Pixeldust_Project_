@@ -19,12 +19,12 @@ export default [
     points: [
       {
         title: 'S&OP Agents',
-        url: 'https://app.storylane.io/share/joz6iyf5o4hr',
+        url: 'https://criticalriver-ai.storylane.io/share/joz6iyf5o4hr',
         image: '/icons/icon-suitcase.svg'
       },
       {
         title: 'Pharma Agent Suite',
-        url: 'https://app.storylane.io/share/zdzhfizgem7d',
+        url: 'https://criticalriver.storylane.io/share/zdzhfizgem7d',
         image: '/icons/icon-pill.svg'
       },
       {
@@ -34,17 +34,17 @@ export default [
       },
       {
         title: 'ITSM Analytics Agent',
-        url: 'https://app.storylane.io/share/euavnomtvuww',
+        url: 'https://criticalriver.storylane.io/share/euavnomtvuww',
         image: '/icons/icon-devices.svg'
       },
       {
         title: 'Supply Chain Agents',
-        url: 'https://app.storylane.io/share/5yrdrizcjz1o',
+        url: 'https://mold-reuse-20690157.figma.site/',
         image: '/icons/icon-truck.svg'
       },
       {
         title: 'Demand Forecasting Agent',
-        url: 'https://app.storylane.io/share/yw4zc4eojnrk',
+        url: 'https://criticalriver.storylane.io/share/yw4zc4eojnrk',
         image: '/icons/icon-cube.svg'
       },
       {
@@ -64,7 +64,7 @@ export default [
       },
       {
         title: 'Price Elasticity Agent',
-        url: 'https://app.storylane.io/share/yfrqebpmeuqa',
+        url: 'https://criticalriver.storylane.io/share/yfrqebpmeuqa',
         image: '/icons/icon-elasticity.svg'
       },
       {
@@ -74,38 +74,43 @@ export default [
       },
       {
         title: 'Procurement Analytics Agent',
-        url: 'https://app.storylane.io/share/ti4mjmppmtyk',
+        url: 'https://criticalriver.storylane.io/share/ti4mjmppmtyk',
         image: '/icons/icon-dashboard.svg'
       },
       {
         title: 'Medical Image Analayzer Agent',
-        url: 'https://app.storylane.io/share/9zvr6pb8ouws',
+        url: 'https://criticalriver.storylane.io/share/9zvr6pb8ouws',
         image: '/icons/icon-xray.svg'
       },
       {
         title: 'Employee Compliance Agent',
-        url: 'https://app.storylane.io/share/3zbh7ew1jecl',
+        url: 'https://criticalriver.storylane.io/share/3zbh7ew1jecl',
         image: '/icons/icon-shield.svg'
       },
       {
         title: 'Industry Demand Planning Agent',
-        url: 'https://app.storylane.io/share/4uscxwskds6z',
+        url: 'https://criticalriver.storylane.io/share/4uscxwskds6z',
         image: '/icons/icon-apps.svg'
       },
       {
         title: 'Document Classifier Agent',
-        url: 'https://app.storylane.io/share/o89obg5ev1ec',
+        url: 'https://criticalriver.storylane.io/share/o89obg5ev1ec',
         image: '/icons/icon-doc.svg'
       },
       {
         title: 'Company Finance Analyst Agent',
-        url: 'https://app.storylane.io/share/9zltcrb6ykye',
+        url: 'https://criticalriver.storylane.io/share/9zltcrb6ykye',
         image: '/icons/icon-graph.svg'
       },
       {
         title: 'Marketing Ad-Optimization Agent',
-        url: '#ref-link',
+        url: 'https://criticalriver.storylane.io/share/dqlkunhce6wf',
         image: '/icons/icon-graph.svg'
+      },
+      {
+        title: 'Utility Energy Analytics Agent',
+        url: 'https://www.youtube.com/watch?v=FBJB2xzi12w',
+        image: '/icons/icon-dashboard.svg'
       }
     ]
   },
@@ -116,7 +121,7 @@ export default [
     points: [
       {
         title: 'Data Automation Platform',
-        url: 'https://app.storylane.io/share/apjts72nktrq',
+        url: 'https://criticalriver.storylane.io/share/apjts72nktrq',
         image: '/icons/icon-scaleable.svg'
       },
       {
@@ -136,12 +141,12 @@ export default [
       },
       {
         title: 'n8n Framework',
-        url: 'https://app.storylane.io/share/evcr4oryoxn9',
+        url: 'https://criticalriver.storylane.io/share/evcr4oryoxn9',
         image: '/icons/icon-radar.svg'
       },
       {
-        title: 'LangGraph Framework - Part 1',
-        url: 'https://app.storylane.io/share/qfcvmhqyuz8t',
+        title: 'LangGraph Framework',
+        url: 'https://criticalriver.storylane.io/share/qfcvmhqyuz8t',
         image: '/icons/icon-ai-star.svg'
       }
     ]
@@ -158,7 +163,7 @@ export default [
       },
       {
         title: 'Workshop - Manufacturing AI Use Case Discovery',
-        url: 'https://app.storylane.io/share/y8silgmn9h9x',
+        url: 'https://criticalriver.storylane.io/share/y8silgmn9h9x',
         image: '/icons/icon-industry.svg'
       },
       {
