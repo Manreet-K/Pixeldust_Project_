@@ -1,15 +1,5 @@
 <template>
   <HomeHero />
-  <section class="px-6 py-[100px] lg:py-[145px]">
-    <div class="flex flex-wrap items-center justify-center gap-10 mx-auto max-w-[1050px] lg:justify-evenly">
-      <img class="h-[18px]" src="@/assets/images/clients/oracle_logo.svg" alt="" loading="lazy" />
-      <img class="h-[28px]" src="@/assets/images/clients/intel_logo.svg" alt="" loading="lazy" />
-      <img class="h-[26px]" src="@/assets/images/clients/doordash_logo.svg" alt="" loading="lazy" />
-      <img class="h-[28px]" src="@/assets/images/clients/uber_logo.svg" alt="" loading="lazy" />
-      <img class="h-[36px]" src="@/assets/images/clients/logitech_logo.svg" alt="" loading="lazy" />
-    </div>
-  </section>
-
   <section class="px-6 py-[100px] relative overflow-x-clip">
     <div class="pointer-events-none absolute bottom-0 left-[50%] w-[1580px] translate-x-[-50%] translate-y-[30%]">
       <img
