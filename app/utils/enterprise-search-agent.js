@@ -7,6 +7,7 @@ import IconScalable from '../assets/images/icons/icon-scalable.svg';
 import IconBox from '../assets/images/icons/icon-box.svg';
 import IconBubble from '../assets/images/icons/icon-bubble.svg';
 import IconTriangle from '../assets/images/icons/icon-triangle.svg';
+import IconOverview from '../assets/images/Overview.png';
 
 export default [
   {
@@ -77,7 +78,7 @@ export default [
         {
           title: 'From Data Chaos to Enterprise Intelligence',
           url: 'https://drive.google.com/file/d/1XhNyZ092FBrfeC6r2-LDWiQYrVopvR-M/view?usp=drive_link',
-          image: IconBubble,
+          image: IconOverview,
         }
       ]
     },
