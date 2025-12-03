@@ -64,7 +64,7 @@ export default [
       list: [
         {
           title: 'From Data Chaos to Enterprise Intelligence',
-          url: 'https://drive.google.com/file/d/1XhNyZ092FBrfeC6r2-LDWiQYrVopvR-M/view?usp=sharing',
+          url: 'https://criticalriver.com/AI(x)/Enterprise%20Strategy%20Analyst%20-%20CriticalRiver.pdf',
           image: IconBox,
         },
       ]
