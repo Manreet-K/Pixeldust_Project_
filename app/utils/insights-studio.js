@@ -80,22 +80,22 @@ export default [
       list: [
         {
           title: 'Overview of Insight Studio Platform',
-          url: 'https://drive.google.com/file/d/1KynALfMBQNdlY7eBa7XsBwUdKEap6Rwx/view?usp=drive_link',
+          url: 'https://criticalriver.com/AI(x)/CoreInsights_Product_Intro_Deck_V1.pdf',
           image: IconBubble,
         },
         {
           title: 'Data Engineering Automation with No Code',
-          url: 'https://drive.google.com/file/d/1ZmfowQli1qPRLqRJqWBh2-zT43lk4lOD/view?usp=drive_link',
+          url: 'https://criticalriver.com/AI(x)/CoreInsights_Studio-Data-Engineering-Automation.pdf',
           image: IconTriangle,
         },
         {
           title: 'Machine Learning Automation for Enterprise',
-          url: 'https://drive.google.com/file/d/1ady8iONu87inv0prDIxigYhZwmmRkLHM/view?usp=drive_link',
+          url: 'https://criticalriver.com/AI(x)/CoreInsights_Studio-ML-Automation.pdf',
           image: IconBox,
         },
         {
           title: 'Explore the Solution Accelerators',
-          url: 'https://drive.google.com/file/d/1NR3ZCg1iQAHLCnyGoMDY5KUMspjFrUs4/view?usp=drive_link',
+          url: 'https://criticalriver.com/AI(x)/CoreInsights_AI_Solution_Catalog.pdf',
           image: IconBox,
         },
       ]
