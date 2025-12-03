@@ -5,6 +5,7 @@ import IconResearchAgent from '../assets/images/icons/icon-deep-research-agent.s
 import IconBox from '../assets/images/icons/icon-box.svg';
 import IconBubble from '../assets/images/icons/icon-bubble.svg';
 import IconTriangle from '../assets/images/icons/icon-triangle.svg';
+import IconML from '../assets/images/Machine-Learning-Automation.png';
 
 export default [
   {
@@ -65,7 +66,7 @@ export default [
         {
           title: 'From Data Chaos to Enterprise Intelligence',
           url: 'https://criticalriver.com/AI(x)/Enterprise%20Strategy%20Analyst%20-%20CriticalRiver.pdf',
-          image: IconBox,
+          image: IconML,
         },
       ]
     },
