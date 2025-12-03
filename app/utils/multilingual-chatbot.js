@@ -7,6 +7,10 @@ import IconLearning from '../assets/images/icons/icon-learning.svg';
 import IconBox from '../assets/images/icons/icon-box.svg';
 import IconBubble from '../assets/images/icons/icon-bubble.svg';
 import IconTriangle from '../assets/images/icons/icon-triangle.svg';
+import IconOverview from '../assets/images/Overview.png';
+import IconData from '../assets/images/Data-Engineering-Automation.png';
+import IconML from '../assets/images/Machine-Learning-Automation.png';
+
 
 export default [
   {
@@ -87,17 +91,17 @@ export default [
         {
           title: 'Automating Month-End Close with Agents',
           url: '/sample-pdf.pdf',
-          image: IconBubble,
+          image: IconOverview,
         },
         {
           title: 'Automating Analytics Pipelines with No Code',
           url: '/sample-pdf.pdf',
-          image: IconTriangle,
+          image: IconData,
         },
         {
           title: 'From Data Chaos to Enterprise Intelligence',
           url: '/sample-pdf.pdf',
-          image: IconBox,
+          image: IconML,
         },
       ]
     },
