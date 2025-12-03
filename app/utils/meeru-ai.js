@@ -5,6 +5,7 @@ import IconDrums from '../assets/images/icons/icon-drums.svg';
 import IconBox from '../assets/images/icons/icon-box.svg';
 import IconBubble from '../assets/images/icons/icon-bubble.svg';
 import IconTriangle from '../assets/images/icons/icon-triangle.svg';
+import IconOverview from '../assets/images/Overview.png';
 
 export default [
   {
@@ -64,7 +65,7 @@ export default [
         {
           title: 'Automating Month-End Close with Agents',
           url: 'https://drive.google.com/file/d/18P8sGZ2YtF65tUYefMMrPZSf0lAeJgqV/view?usp=drive_link',
-          image: IconBubble,
+          image: IconOverview,
         },
       ]
     },
