@@ -7,6 +7,8 @@ import IconBox from '../assets/images/icons/icon-box.svg';
 import IconBubble from '../assets/images/icons/icon-bubble.svg';
 import IconTriangle from '../assets/images/icons/icon-triangle.svg';
 import IconOverview from '../assets/images/Overview.png';
+import IconAutomation from '../assets/images/Data-Engineering-Automation.png';
+
 
 export default [
   {
@@ -86,8 +88,8 @@ export default [
         },
         {
           title: 'Data Engineering Automation with No Code',
-          url: 'https://criticalriver.com/AI(x)/CoreInsights_Studio-Data-Engineering-Automation.pdf',
-          image: IconTriangle,
+          url: 'https://www.criticalriver.com/AI(x)/CoreInsights-Studio-Data-Engineering-Automation.pdf',
+          image: IconAutomation,
         },
         {
           title: 'Machine Learning Automation for Enterprise',
