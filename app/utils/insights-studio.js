@@ -4,8 +4,9 @@ import IconLifecycle from '../assets/images/icons/icon-lifecycle.svg';
 import IconAutomation from '../assets/images/icons/icon-code-automation.svg';
 import IconCollab from '../assets/images/icons/icon-collaboration.svg';
 import IconBox from '../assets/images/icons/icon-box.svg';
-import IconBubble from '../assets/images/icons/icon-bubble.svg';
+#import IconBubble from '../assets/images/icons/icon-bubble.svg';
 import IconTriangle from '../assets/images/icons/icon-triangle.svg';
+import IconOverview from '../assets/images/Overview.png';
 
 export default [
   {
@@ -80,8 +81,8 @@ export default [
       list: [
         {
           title: 'Overview of Insight Studio Platform',
-          url: 'https://criticalriver.com/AI(x)/CoreInsights_Product_Intro_Deck_V1.pdf',
-          image: IconBubble,
+          url: 'https://www.criticalriver.com/AI(x)/CoreInsights-Product-Intro-Deck-V1.pdf',
+          image: IconOverview,
         },
         {
           title: 'Data Engineering Automation with No Code',
