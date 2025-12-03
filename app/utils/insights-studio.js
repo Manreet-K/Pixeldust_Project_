@@ -8,7 +8,8 @@ import IconBubble from '../assets/images/icons/icon-bubble.svg';
 import IconTriangle from '../assets/images/icons/icon-triangle.svg';
 import IconOverview from '../assets/images/Overview.png';
 import IconData from '../assets/images/Data-Engineering-Automation.png';
-
+import IconML from '../assets/images/Machine-Learning-Automation.png';
+import IconExplore from '../assets/images/Explore-the-Solution-Accelerators.png';
 
 export default [
   {
@@ -93,13 +94,13 @@ export default [
         },
         {
           title: 'Machine Learning Automation for Enterprise',
-          url: 'https://criticalriver.com/AI(x)/CoreInsights_Studio-ML-Automation.pdf',
-          image: IconBox,
+          url: 'https://www.criticalriver.com/AI(x)/CoreInsights-Studio-ML-Automation.pdf',
+          image: IconML,
         },
         {
           title: 'Explore the Solution Accelerators',
-          url: 'https://criticalriver.com/AI(x)/CoreInsights_AI_Solution_Catalog.pdf',
-          image: IconBox,
+          url: 'https://www.criticalriver.com/AI(x)/CoreInsights-AI-Solution-Catalog.pdf',
+          image: IconExplore,
         },
       ]
     },
