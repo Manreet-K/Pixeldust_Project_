@@ -4,7 +4,7 @@ import IconLifecycle from '../assets/images/icons/icon-lifecycle.svg';
 import IconAutomation from '../assets/images/icons/icon-code-automation.svg';
 import IconCollab from '../assets/images/icons/icon-collaboration.svg';
 import IconBox from '../assets/images/icons/icon-box.svg';
-#import IconBubble from '../assets/images/icons/icon-bubble.svg';
+import IconBubble from '../assets/images/icons/icon-bubble.svg';
 import IconTriangle from '../assets/images/icons/icon-triangle.svg';
 import IconOverview from '../assets/images/Overview.png';
 
