@@ -5,7 +5,7 @@ export default [
     label: '',
     title: `Explore CriticalRiver’s AI Universe`,
     description: `Experience our Agentic AI Capabilities, take Platform Tours,
-      and gain Glimpses into Interactive Workshops and Use Case Discovery Sessions.`,
+      peek into Interactive Workshops and Use Case Discovery Sessions.`,
     leaderHeadline: '',
     headingMaxWidth: 860,
     leaderMaxWidth: 940,
@@ -14,101 +14,101 @@ export default [
   },
   {
     _component: 'galleryGridSection',
-    title: 'Business Agent Tours',
+    title: 'Business Solution Tours',
     description: `(ERP, CRM, Sales, Marketing, HR, IT Service, HCLS, Pharma)`,
     points: [
       {
-        title: 'S&OP Agents',
+        title: 'S&OP Solutions',
         url: 'https://criticalriver-ai.storylane.io/share/joz6iyf5o4hr',
         image: '/icons/icon-suitcase.svg'
       },
       {
-        title: 'Pharma Agent Suite',
+        title: 'Pharma Solutions',
         url: 'https://criticalriver.storylane.io/share/zdzhfizgem7d',
         image: '/icons/icon-pill.svg'
       },
       {
-        title: 'Sales Forecasting Agent',
+        title: 'Sales Forecasting Solution',
         url: '#ref-link',
         image: '/icons/icon-trends.svg'
       },
       {
-        title: 'ITSM Analytics Agent',
+        title: 'ITSM Analytics Solution',
         url: 'https://criticalriver.storylane.io/share/euavnomtvuww',
         image: '/icons/icon-devices.svg'
       },
       {
-        title: 'Supply Chain Agents',
+        title: 'Supply Chain Solution',
         url: 'https://mold-reuse-20690157.figma.site/',
         image: '/icons/icon-truck.svg'
       },
       {
-        title: 'Demand Forecasting Agent',
+        title: 'Demand Forecasting Solution',
         url: 'https://criticalriver.storylane.io/share/yw4zc4eojnrk',
         image: '/icons/icon-cube.svg'
       },
       {
-        title: 'Healthcare Agent Suite',
+        title: 'Healthcare Solution',
         url: '#ref-link',
         image: '/icons/icon-plus.svg'
       },
       {
-        title: 'CRM Agents',
+        title: 'CRM Solutions',
         url: '#ref-link',
         image: '/icons/icon-user.svg'
       },
       {
-        title: 'Products Matching Agent',
+        title: 'Products Matching Solution',
         url: '#ref-link',
         image: '/icons/icon-chart.svg'
       },
       {
-        title: 'Price Elasticity Agent',
+        title: 'Price Elasticity Solution',
         url: 'https://criticalriver.storylane.io/share/yfrqebpmeuqa',
         image: '/icons/icon-elasticity.svg'
       },
       {
-        title: 'Production Scheduling Agent',
+        title: 'Production Scheduling Solution',
         url: '#ref-link',
         image: '/icons/icon-schedule.svg'
       },
       {
-        title: 'Procurement Analytics Agent',
+        title: 'Procurement Analytics Solution',
         url: 'https://criticalriver.storylane.io/share/ti4mjmppmtyk',
         image: '/icons/icon-dashboard.svg'
       },
       {
-        title: 'Medical Image Analayzer Agent',
+        title: 'Medical Image Analayzer Solution',
         url: 'https://criticalriver.storylane.io/share/9zvr6pb8ouws',
         image: '/icons/icon-xray.svg'
       },
       {
-        title: 'Employee Compliance Agent',
+        title: 'Employee Compliance Solution',
         url: 'https://criticalriver.storylane.io/share/3zbh7ew1jecl',
         image: '/icons/icon-shield.svg'
       },
       {
-        title: 'Industry Demand Planning Agent',
+        title: 'Industry Demand Planning Solution',
         url: 'https://criticalriver.storylane.io/share/4uscxwskds6z',
         image: '/icons/icon-apps.svg'
       },
       {
-        title: 'Document Classifier Agent',
+        title: 'Document Classifier Solution',
         url: 'https://criticalriver.storylane.io/share/o89obg5ev1ec',
         image: '/icons/icon-doc.svg'
       },
       {
-        title: 'Company Finance Analyst Agent',
+        title: 'Company Finance Analyst Solution',
         url: 'https://criticalriver.storylane.io/share/9zltcrb6ykye',
         image: '/icons/icon-graph.svg'
       },
       {
-        title: 'Marketing Ad-Optimization Agent',
+        title: 'Marketing Ad-Optimization Solution',
         url: 'https://criticalriver.storylane.io/share/dqlkunhce6wf',
         image: '/icons/icon-graph.svg'
       },
       {
-        title: 'Utility Energy Analytics Agent',
+        title: 'Utility Energy Analytics Solution',
         url: 'https://www.youtube.com/watch?v=FBJB2xzi12w',
         image: '/icons/icon-dashboard.svg'
       }
