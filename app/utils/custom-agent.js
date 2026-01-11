@@ -29,7 +29,7 @@ export default [
       },
       {
         title: 'Sales Forecasting Solution',
-        url: '#ref-link',
+        url: 'https://criticalriver.storylane.io/share/iiwh8f0uyhuc',
         image: '/icons/icon-trends.svg'
       },
       {
