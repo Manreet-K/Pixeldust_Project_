@@ -49,7 +49,7 @@ export default [
       },
       {
         title: 'Healthcare Solution',
-        url: '#ref-link',
+        url: 'https://criticalriver.storylane.io/share/sl3h5vej4bya',
         image: '/icons/icon-plus.svg'
       },
       {
