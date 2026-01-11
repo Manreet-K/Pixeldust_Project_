@@ -141,7 +141,7 @@ export default [
       },
       {
         title: 'n8n Framework',
-        url: 'https://criticalriver.storylane.io/share/evcr4oryoxn9',
+        url: 'https://criticalriver.storylane.io/share/tiji9llw7x2x',
         image: '/icons/icon-radar.svg'
       },
       {
