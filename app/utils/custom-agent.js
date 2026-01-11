@@ -126,7 +126,7 @@ export default [
       },
       {
         title: 'MLOps Platform',
-        url: '#ref-link',
+        url: 'https://criticalriver.storylane.io/share/gz7ohlvwxefr',
         image: '/icons/icon-brain-crt.svg'
       },
       {
