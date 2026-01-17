@@ -158,7 +158,7 @@ export default [
     points: [
       {
         title: 'Workshop - Transforming R&D of a Biotech Company',
-        url: '#ref-link',
+        url: 'https://criticalriver.storylane.io/share/8zwn7xwvw34d',
         image: '/icons/icon-scope.svg'
       },
       {
