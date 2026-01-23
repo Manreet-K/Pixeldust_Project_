@@ -21,6 +21,9 @@
           Unlock the potential of your data with our suite of
           innovative AI solutions, driving smarter business outcomes.
         </p>
+        <p>
+        <iframe width="560" height="315" src="https://youtu.be/WraGfvqwxl8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         </p>
         <button
           @click="openModal"
           class="main-btn max-w-full w-[280px]"
