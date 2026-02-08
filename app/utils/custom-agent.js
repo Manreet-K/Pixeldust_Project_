@@ -101,7 +101,7 @@ export default [
   },
   {
     _component: 'galleryGridSection',
-    title: 'Platform and Framework Tours',
+    title: 'AI Platform and Framework Tours',
     description: `(Data Science & Machine Learning, AgentX Platform, n8n, LangGraph, CrewAI, Google ADK, Bedrock, Azure Copilot)`,
     points: [
       {
@@ -138,7 +138,7 @@ export default [
   },
   {
     _component: 'galleryGridSection',
-    title: 'Agentic AI Workshop Tours',
+    title: 'AI Workshop Tours',
     description: `(Data & AI Literacy, Use Case Discovery sessions, CXO Bootcamp)`,
     points: [
       {
