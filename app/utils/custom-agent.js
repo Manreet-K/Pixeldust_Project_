@@ -53,13 +53,8 @@ export default [
         image: '/icons/icon-plus.svg'
       },
       {
-        title: 'CRM Solutions',
-        url: '#ref-link',
-        image: '/icons/icon-user.svg'
-      },
-      {
-        title: 'Products Matching Solution',
-        url: '#ref-link',
+        title: 'Product Matching & Discovery Solution',
+        url: 'https://criticalriver.storylane.io/share/2raxqqwmbyzz',
         image: '/icons/icon-chart.svg'
       },
       {
@@ -68,12 +63,7 @@ export default [
         image: '/icons/icon-elasticity.svg'
       },
       {
-        title: 'Production Scheduling Solution',
-        url: '#ref-link',
-        image: '/icons/icon-schedule.svg'
-      },
-      {
-        title: 'Procurement Analytics Solution',
+        title: 'Procurement Supplier Analytics Solution',
         url: 'https://criticalriver.storylane.io/share/ti4mjmppmtyk',
         image: '/icons/icon-dashboard.svg'
       },
@@ -168,12 +158,12 @@ export default [
       },
       {
         title: 'Workshop - ERP Use Case Discovery',
-        url: '#ref-link',
+        url: 'https://criticalriver.storylane.io/share/lwiinqieirbs',
         image: '/icons/icon-building.svg'
       },
       {
         title: 'AI Bootcamp',
-        url: '#ref-link',
+        url: 'https://youtu.be/NyOEzJ-aYDU',
         image: '/icons/icon-brain.svg'
       }
     ]
