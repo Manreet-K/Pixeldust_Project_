@@ -78,7 +78,7 @@ export default [
         image: '/icons/icon-shield.svg'
       },
       {
-        title: 'Industry Demand Planning Solution',
+        title: 'Demand Planning Solution',
         url: 'https://criticalriver.storylane.io/share/4uscxwskds6z',
         image: '/icons/icon-apps.svg'
       },
@@ -90,11 +90,6 @@ export default [
       {
         title: 'Company Finance Analyst Solution',
         url: 'https://criticalriver.storylane.io/share/9zltcrb6ykye',
-        image: '/icons/icon-graph.svg'
-      },
-      {
-        title: 'Marketing Ad-Optimization Solution',
-        url: 'https://criticalriver.storylane.io/share/dqlkunhce6wf',
         image: '/icons/icon-graph.svg'
       },
       {
